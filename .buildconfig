@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/selim/.cache/gnome-builder/install/Problem-Solving/host
+app-id=
+postbuild=
+prebuild=
+default=true

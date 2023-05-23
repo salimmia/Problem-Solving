@@ -1,0 +1,113 @@
+                                           Game Name: Trap The Cat (WEB APP)
+
+	MODES 
+Single Player Mode:
+Player vs Maching 
+Player gives the block 
+Cat takes the move(using BFS Algo - Shortest Path Calculation or Dijkstra's)
+
+Multiplayer Mode
+Player vs Player 
+Block & Moves will be given by the players 
+
+Optional Single Player Mode 
+Player vs Maching 
+Player gives the cat moves 
+Machine gives the block (Think about it)
+
+
+
+
+
+
+
+
+Functionalities 
+
+Players Profile, High Score, Winning Percentage,.... 
+Can make FRIENDS
+Players can INVITE other player(FRIENDS) to play together.
+Players can INVITE 
+Remommendation / Helps for players move 
+
+
+Variations : 
+1.The weights of edges not always one(need dijkstra algorithm) for implementation.
+2.Grid Structure can be different
+
+
+
+
+
+
+
+Resources: 
+Implemented by,
+https://llerrah.com/cattrap.htm 
+https://www.silvergames.com/en/circle-the-cat
+https://www.speelspelletjes.nl/spel/circle-the-cat
+https://www.gamedesign.jp/sp/cat/
+
+implementation notes (html, css, js etc..)
+
+https://github.com/princeedward/CircleTheCat
+https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-1-introduction/
+
+Trap the Cat algo 
+https://stackoverflow.com/questions/52977732/what-is-a-good-algorithm-to-trap-the-cat-in-the-game-circle-the-cat
+
+
+Best first movement for Cat trap game solution
+Close the corners and the end panel are best first places for Cat trap today, according to the majority of opinions on social networks, but we have compiled a list of the 5 best moves to start our cat trap game solution. We recommend you to cover the last spots according to the direction that the cat advances. Once you have covered the last spots you must trap it inside your panel until the cat cannot move, and that is when you will have won the game.
+
+https://www.reddit.com/r/theydidthemath/comments/2i0ymj/request_what_is_the_prefect_strategy_for_circle/
+
+Cat Trap Game : Play Circle The Cat. How to Win Every Game?
+https://www.virlan.co/game/cat-trap-game/
+https://www.youtube.com/watch?v=C6MM-jnxDPA
+
+
+trap the cat game free download android 
+
+Game Features From Android 
+1. Sound (JUMP)
+2. Statistics(Games Played, Games Won, Minimum(best) moves, Winning Rate)
+3. Lost / WIN Imoji
+4. Play Again Button 
+5. Levels 
+
+
+NOTES.
+
+
+
+
+
+                                           Game Name: Tic Tac Toe (WEB APP)
+
+	TYPES 
+Normal, Numerical 
+
+	LEVELS
+
+
+	MODES 
+Single Player Mode:
+Player vs Maching 
+
+Multiplayer Mode
+Player vs Player 
+
+
+
+
+
+Functionalities 
+
+
+
+Players Profile, High Score, Winning Percentage,.... 
+Can make FRIENDS
+Players can INVITE other player(FRIENDS) to play together.
+
+

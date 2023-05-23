@@ -1,0 +1,17 @@
+nibo : 1 lcm : 2
+nibo : 2 lcm : 3
+nibo : 3 lcm : 6
+ans : 4
+nibo : 1 lcm : 2
+nibo : 2 lcm : 3
+nibo : 3 lcm : 6
+ans : 2
+nibo : 1 lcm : 2
+nibo : 2 lcm : 3
+nibo : 3 lcm : 6
+ans : 3
+nibo : 1 lcm : 2
+nibo : 2 lcm : 3
+nibo : 3 lcm : 6
+ans : 5
+Case 1: Bob

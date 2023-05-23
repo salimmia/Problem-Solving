@@ -1,0 +1,20 @@
+How to think?
+
+BruteForce
+Greedy
+Dynamic Programming
+Binary Search
+Backtracking 
+Graphs 
+String
+
+
+Common Erros:
+small mxn
+Integer Overflow change all int to ll
+double declaration of a varible(local & global)
+cin>>n
+print("Case No: ");
+Corner Case(n == 0 or n == 1)
+Precision Error
+

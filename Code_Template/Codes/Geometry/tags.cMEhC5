@@ -1,0 +1,10 @@
+ll	Polygon Area and Picks Theorem.cpp	/^typedef long long ll;$/;"	t	file:
+pii	Polygon Area and Picks Theorem.cpp	/^typedef pair<int, int> pii;$/;"	t	file:
+mxn	Polygon Area and Picks Theorem.cpp	/^const ll mxn = 200005;$/;"	v
+mod	Polygon Area and Picks Theorem.cpp	/^const int mod = 1000000007;\/\/1e9+7;$/;"	v
+faster_io	Polygon Area and Picks Theorem.cpp	15;"	d	file:
+watch	Polygon Area and Picks Theorem.cpp	18;"	d	file:
+watch2	Polygon Area and Picks Theorem.cpp	19;"	d	file:
+watch3	Polygon Area and Picks Theorem.cpp	20;"	d	file:
+solve_case	Polygon Area and Picks Theorem.cpp	/^void solve_case(int tc)$/;"	f
+main	Polygon Area and Picks Theorem.cpp	/^int main()$/;"	f

@@ -1,0 +1,1320 @@
+mx	I.cpp	6;"	d	file:
+ll	I.cpp	7;"	d	file:
+n	I.cpp	/^int n, m, ii, k;$/;"	v
+m	I.cpp	/^int n, m, ii, k;$/;"	v
+ii	I.cpp	/^int n, m, ii, k;$/;"	v
+k	I.cpp	/^int n, m, ii, k;$/;"	v
+ch	I.cpp	/^char ch[mx], ch1[mx];$/;"	v
+ch1	I.cpp	/^char ch[mx], ch1[mx];$/;"	v
+Hash_dui	I.cpp	/^struct Hash_dui$/;"	s	file:
+base	I.cpp	/^	ll base, mod;$/;"	m	struct:Hash_dui	file:
+mod	I.cpp	/^	ll base, mod;$/;"	m	struct:Hash_dui	file:
+sz	I.cpp	/^	int sz;$/;"	m	struct:Hash_dui	file:
+Rev	I.cpp	/^	vector<int>Rev, Forw, P;$/;"	m	struct:Hash_dui	file:
+Forw	I.cpp	/^	vector<int>Rev, Forw, P;$/;"	m	struct:Hash_dui	file:
+P	I.cpp	/^	vector<int>Rev, Forw, P;$/;"	m	struct:Hash_dui	file:
+Hash_dui	I.cpp	/^	Hash_dui() {}$/;"	f	struct:Hash_dui
+Hash_dui	I.cpp	/^	Hash_dui(const char* s, ll b, ll m)$/;"	f	struct:Hash_dui
+Single_char_ad	I.cpp	/^	void Single_char_ad(char cc)$/;"	f	struct:Hash_dui
+Range_Hash	I.cpp	/^	inline int Range_Hash(int l, int r)$/;"	f	struct:Hash_dui
+Reverse_Hash	I.cpp	/^	inline int Reverse_Hash(int l, int r)$/;"	f	struct:Hash_dui
+Hash_Main	I.cpp	/^struct Hash_Main$/;"	s	file:
+h1	I.cpp	/^	Hash_dui h1, h2;$/;"	m	struct:Hash_Main	file:
+h2	I.cpp	/^	Hash_dui h1, h2;$/;"	m	struct:Hash_Main	file:
+Hash_Main	I.cpp	/^	Hash_Main() {}$/;"	f	struct:Hash_Main
+Hash_Main	I.cpp	/^	Hash_Main(const char* s)$/;"	f	struct:Hash_Main
+Char_Add	I.cpp	/^	void Char_Add(char cc)$/;"	f	struct:Hash_Main
+Range_Hash	I.cpp	/^	inline ll Range_Hash(int l, int r) \/\/\/ O base index$/;"	f	struct:Hash_Main
+charhash	I.cpp	/^Hash_Main charhash[16];$/;"	v
+solve	I.cpp	/^void solve()$/;"	f
+main	I.cpp	/^int main()$/;"	f
+Tf	1 Basic+Line.cpp.cpp	/^typedef double Tf;const Tf inf=1e100;$/;"	t	file:
+inf	1 Basic+Line.cpp.cpp	/^typedef double Tf;const Tf inf=1e100;$/;"	v
+eps	1 Basic+Line.cpp.cpp	/^const Tf eps=1e-9;const Tf PI=acos((double)-1.0);$/;"	v
+PI	1 Basic+Line.cpp.cpp	/^const Tf eps=1e-9;const Tf PI=acos((double)-1.0);$/;"	v
+sign	1 Basic+Line.cpp.cpp	/^int sign(Tf x){return(x>eps)-(x<-eps);}$/;"	f
+PT	1 Basic+Line.cpp.cpp	/^struct PT{Tf x,y;$/;"	s	file:
+x	1 Basic+Line.cpp.cpp	/^struct PT{Tf x,y;$/;"	m	struct:PT	file:
+y	1 Basic+Line.cpp.cpp	/^struct PT{Tf x,y;$/;"	m	struct:PT	file:
+PT	1 Basic+Line.cpp.cpp	/^ PT(){x=0,y=0;}PT(Tf x,Tf y):x(x),y(y){}$/;"	f	struct:PT
+PT	1 Basic+Line.cpp.cpp	/^ PT(){x=0,y=0;}PT(Tf x,Tf y):x(x),y(y){}$/;"	f	struct:PT
+PT	1 Basic+Line.cpp.cpp	/^ PT(const PT&p):x(p.x),y(p.y){}$/;"	f	struct:PT
+operator +	1 Basic+Line.cpp.cpp	/^ PT operator+(const PT&a)const{return PT(x+a.x,y+a.y);}$/;"	f	struct:PT
+operator -	1 Basic+Line.cpp.cpp	/^ PT operator-(const PT&a)const{return PT(x-a.x,y-a.y);}$/;"	f	struct:PT
+operator *	1 Basic+Line.cpp.cpp	/^ PT operator*(const Tf a)const{return PT(x*a,y*a);}$/;"	f	struct:PT
+operator *	1 Basic+Line.cpp.cpp	/^ friend PT operator*(const double&a,const PT&b){return PT(a*b.x,a*b.y);}$/;"	f	struct:PT
+operator /	1 Basic+Line.cpp.cpp	/^ PT operator\/(const Tf a)const{return PT(x\/a,y\/a);}$/;"	f	struct:PT
+operator ==	1 Basic+Line.cpp.cpp	/^ bool operator==(PT a)const{return sign(a.x-x)==0 && sign(a.y-y)==0;}$/;"	f	struct:PT
+operator !=	1 Basic+Line.cpp.cpp	/^ bool operator!=(PT a)const{return !(*this==a);}$/;"	f	struct:PT
+operator <	1 Basic+Line.cpp.cpp	/^ bool operator<(PT a)const{return sign(a.x-x)==0?y<a.y:x<a.x;}$/;"	f	struct:PT
+operator >	1 Basic+Line.cpp.cpp	/^ bool operator>(PT a)const{return sign(a.x-x)==0?y>a.y:x>a.x;}$/;"	f	struct:PT
+norm	1 Basic+Line.cpp.cpp	/^ Tf norm(){return sqrt(x*x+y*y);}$/;"	f	struct:PT
+norm2	1 Basic+Line.cpp.cpp	/^ Tf norm2(){return x*x+y*y;}PT perp(){return PT(-y,x);}$/;"	f	struct:PT
+perp	1 Basic+Line.cpp.cpp	/^ Tf norm2(){return x*x+y*y;}PT perp(){return PT(-y,x);}$/;"	f	struct:PT
+arg	1 Basic+Line.cpp.cpp	/^ Tf arg(){Tf x=atan2(y,x); return x;}$/;"	f	struct:PT
+truncate	1 Basic+Line.cpp.cpp	/^ PT truncate(Tf r){Tf k=norm();\/\/returns a vector with norm r and having same direction$/;"	f	struct:PT
+operator >>	1 Basic+Line.cpp.cpp	/^ friend istream&operator>>(istream&is,PT&p){return is >> p.x >> p.y;}$/;"	f	struct:PT
+operator <<	1 Basic+Line.cpp.cpp	/^ friend ostream&operator<<(ostream&os,const PT&p){return os<< p.x<< " "<< p.y;}$/;"	f	struct:PT
+dot	1 Basic+Line.cpp.cpp	/^Tf dot(PT a,PT b){return a.x*b.x+a.y*b.y;} \/\/I$/;"	f
+dist2	1 Basic+Line.cpp.cpp	/^Tf dist2(PT a,PT b){return dot(a-b,a-b);}\/\/I$/;"	f
+dist	1 Basic+Line.cpp.cpp	/^Tf dist(PT a,PT b){return sqrt(dot(a-b,a-b));}\/\/I$/;"	f
+cross	1 Basic+Line.cpp.cpp	/^Tf cross(PT a,PT b){return a.x*b.y-a.y*b.x;}\/\/I$/;"	f
+cross2	1 Basic+Line.cpp.cpp	/^Tf cross2(PT a,PT b,PT c){return cross(b-a,c-a);}\/\/I$/;"	f
+orientation	1 Basic+Line.cpp.cpp	/^int orientation(PT a,PT b,PT c){return sign(cross(b-a,c-a));}\/\/I$/;"	f
+perp	1 Basic+Line.cpp.cpp	/^PT perp(PT a){return PT(-a.y,a.x);}$/;"	f
+rotateccw90	1 Basic+Line.cpp.cpp	/^PT rotateccw90(PT a){return PT(-a.y,a.x);}$/;"	f
+rotatecw90	1 Basic+Line.cpp.cpp	/^PT rotatecw90(PT a){return PT(a.y,-a.x);}$/;"	f
+rotateccw	1 Basic+Line.cpp.cpp	/^PT rotateccw(PT a,Tf t){return PT(a.x*cos(t)-a.y*sin(t),a.x*sin(t)+a.y*cos(t));}$/;"	f
+rotatecw	1 Basic+Line.cpp.cpp	/^PT rotatecw(PT a,Tf t){return PT(a.x*cos(t)+a.y*sin(t),-a.x*sin(t)+a.y*cos(t));}$/;"	f
+SQ	1 Basic+Line.cpp.cpp	/^Tf SQ(Tf x){return x*x;}$/;"	f
+rad_to_deg	1 Basic+Line.cpp.cpp	/^Tf rad_to_deg(Tf r){return(r*180.0\/PI);}Tf deg_to_rad$/;"	f
+deg_to_rad	1 Basic+Line.cpp.cpp	/^Tf rad_to_deg(Tf r){return(r*180.0\/PI);}Tf deg_to_rad$/;"	f
+get_angle	1 Basic+Line.cpp.cpp	/^(Tf d){return(d*PI\/180.0);} Tf get_angle(PT a,PT b){$/;"	f
+is_point_in_angle	1 Basic+Line.cpp.cpp	/^bool is_point_in_angle(PT b,PT a,PT c,PT p){\/\/<bac$/;"	f
+half	1 Basic+Line.cpp.cpp	/^bool half(PT p){return p.y>0.0||(p.y==0.0&&p.x<0.0);}$/;"	f
+polar_sort	1 Basic+Line.cpp.cpp	/^void polar_sort(vector<PT>&v){$/;"	f
+line	1 Basic+Line.cpp.cpp	/^struct line{$/;"	s	file:
+a	1 Basic+Line.cpp.cpp	/^PT a,b;\/\/goes through points a and b$/;"	m	struct:line	file:
+b	1 Basic+Line.cpp.cpp	/^PT a,b;\/\/goes through points a and b$/;"	m	struct:line	file:
+v	1 Basic+Line.cpp.cpp	/^PT v; Tf c;line(){}\/\/direction vector v and offset c$/;"	m	struct:line	file:
+c	1 Basic+Line.cpp.cpp	/^PT v; Tf c;line(){}\/\/direction vector v and offset c$/;"	m	struct:line	file:
+line	1 Basic+Line.cpp.cpp	/^PT v; Tf c;line(){}\/\/direction vector v and offset c$/;"	f	struct:line
+line	1 Basic+Line.cpp.cpp	/^line(PT v,Tf c):v(v),c(c){auto p=get_points();$/;"	f	struct:line
+line	1 Basic+Line.cpp.cpp	/^line(Tf _a,Tf _b,Tf _c):v({_b,-_a}),c(-_c){$/;"	f	struct:line
+line	1 Basic+Line.cpp.cpp	/^line(PT p,PT q):v(q-p),c(cross(v,p)),a(p),b(q){}$/;"	f	struct:line
+get_points	1 Basic+Line.cpp.cpp	/^pair<PT,PT>get_points(){PT p,q; Tf a =-v.y,b=v.x;$/;"	f	struct:line
+get_abc	1 Basic+Line.cpp.cpp	/^array<double,3>get_abc(){$/;"	f	struct:line
+side	1 Basic+Line.cpp.cpp	/^int side(PT p){return sign(cross(v,p)-c);}\/\/+1L,-1R,o0$/;"	f	struct:line
+perpendicular_through	1 Basic+Line.cpp.cpp	/^line perpendicular_through(PT p){return{p,p+perp(v)};}$/;"	f	struct:line
+translate	1 Basic+Line.cpp.cpp	/^line translate(PT t){return{v,c+cross(v,t)};}$/;"	f	struct:line
+cmp_by_projection	1 Basic+Line.cpp.cpp	/^bool cmp_by_projection(PT p,PT q){return dot(v,p)<dot(v,q);}$/;"	f	struct:line
+shift_left	1 Basic+Line.cpp.cpp	/^line shift_left(Tf d){PT z=v.perp().truncate(d);$/;"	f	struct:line
+point_along_line	1 Basic+Line.cpp.cpp	/^PT point_along_line(PT a,PT b,Tf d){$/;"	f
+project_from_point_to_line	1 Basic+Line.cpp.cpp	/^PT project_from_point_to_line(PT a,PT b,PT c){\/\/lineAB$/;"	f
+reflection_from_point_to_line	1 Basic+Line.cpp.cpp	/^PT reflection_from_point_to_line(PT a,PT b,PT c){$/;"	f
+dist_from_point_to_line	1 Basic+Line.cpp.cpp	/^Tf dist_from_point_to_line(PT a,PT b,PT c){\/\/lineAB$/;"	f
+is_point_on_seg	1 Basic+Line.cpp.cpp	/^bool is_point_on_seg(PT a,PT b,PT p){\/\/lineAB$/;"	f
+project_from_point_to_seg	1 Basic+Line.cpp.cpp	/^PT project_from_point_to_seg(PT a,PT b,PT c){\/\/segAB$/;"	f
+dist_from_point_to_seg	1 Basic+Line.cpp.cpp	/^Tf dist_from_point_to_seg(PT a,PT b,PT c){\/\/segAB$/;"	f
+is_parallel	1 Basic+Line.cpp.cpp	/^bool is_parallel(PT a,PT b,PT c,PT d){\/\/1Y,0N$/;"	f
+are_lines_same	1 Basic+Line.cpp.cpp	/^bool are_lines_same(PT a,PT b,PT c,PT d){$/;"	f
+angle_bisector	1 Basic+Line.cpp.cpp	/^PT angle_bisector(PT&a,PT&b,PT&c){\/\/\/<abc$/;"	f
+line_line_intersection	1 Basic+Line.cpp.cpp	/^bool line_line_intersection(PT a,PT b,PT c,PT d,PT&ans){$/;"	f
+seg_seg_intersection	1 Basic+Line.cpp.cpp	/^bool seg_seg_intersection(PT a,PT b,PT c,PT d,PT&ans){$/;"	f
+seg_seg_intersection_inside	1 Basic+Line.cpp.cpp	/^set<PT>seg_seg_intersection_inside(PT a,PT b,PT c,PT d){$/;"	f
+seg_line_relation	1 Basic+Line.cpp.cpp	/^int seg_line_relation(PT a,PT b,PT c,PT d){\/\/lineAB$/;"	f
+seg_line_intersection	1 Basic+Line.cpp.cpp	/^bool seg_line_intersection(PT a,PT b,PT c,PT d,PT&ans){$/;"	f
+dist_from_seg_to_seg	1 Basic+Line.cpp.cpp	/^Tf dist_from_seg_to_seg(PT a,PT b,PT c,PT d){$/;"	f
+dist_from_point_to_ray	1 Basic+Line.cpp.cpp	/^Tf dist_from_point_to_ray(PT a,PT b,PT c){\/\/rayAB>B$/;"	f
+ray_ray_intersection	1 Basic+Line.cpp.cpp	/^bool ray_ray_intersection(PT as,PT ad,PT bs,PT bd){$/;"	f
+ray_ray_distance	1 Basic+Line.cpp.cpp	/^Tf ray_ray_distance(PT as,PT ad,PT bs,PT bd){$/;"	f
+mx	B.cpp	4;"	d	file:
+ll	B.cpp	5;"	d	file:
+mod	B.cpp	6;"	d	file:
+a	B.cpp	/^int a[mx];$/;"	v
+ch	B.cpp	/^char ch[mx];$/;"	v
+n	B.cpp	/^int n, m, ii, k;$/;"	v
+m	B.cpp	/^int n, m, ii, k;$/;"	v
+ii	B.cpp	/^int n, m, ii, k;$/;"	v
+k	B.cpp	/^int n, m, ii, k;$/;"	v
+inv	B.cpp	/^ll inv[mx], invfact[mx], fact[mx];$/;"	v
+invfact	B.cpp	/^ll inv[mx], invfact[mx], fact[mx];$/;"	v
+fact	B.cpp	/^ll inv[mx], invfact[mx], fact[mx];$/;"	v
+add	B.cpp	/^ll add(ll a, ll b)$/;"	f
+sub	B.cpp	/^ll sub(ll a, ll b)$/;"	f
+mul	B.cpp	/^ll mul(ll a, ll b)$/;"	f
+bigmod	B.cpp	/^ll bigmod(ll a, ll b) {$/;"	f
+Fact	B.cpp	/^void Fact()$/;"	f
+mod_inverse	B.cpp	/^void mod_inverse()$/;"	f
+solve	B.cpp	/^void solve()$/;"	f
+main	B.cpp	/^int main()$/;"	f
+mx	C.cpp	6;"	d	file:
+ll	C.cpp	7;"	d	file:
+mod	C.cpp	8;"	d	file:
+a	C.cpp	/^int a[mx];$/;"	v
+ch	C.cpp	/^char ch[mx];$/;"	v
+n	C.cpp	/^int n, m, tt, k;$/;"	v
+m	C.cpp	/^int n, m, tt, k;$/;"	v
+tt	C.cpp	/^int n, m, tt, k;$/;"	v
+k	C.cpp	/^int n, m, tt, k;$/;"	v
+N	C.cpp	/^const int N = 3e5 + 9;$/;"	v
+Tf	C.cpp	/^typedef long double Tf;$/;"	t	file:
+inf	C.cpp	/^const double inf = 1e100;$/;"	v
+eps	C.cpp	/^const double eps = 1e-9;$/;"	v
+PI	C.cpp	/^const double PI = acos((double) - 1.0);$/;"	v
+sign	C.cpp	/^int sign(double x) { return (x > eps) - (x < -eps); }$/;"	f
+PT	C.cpp	/^struct PT {$/;"	s	file:
+x	C.cpp	/^    Tf x, y;$/;"	m	struct:PT	file:
+y	C.cpp	/^    Tf x, y;$/;"	m	struct:PT	file:
+read	C.cpp	/^    void read () { scanf("%LF%LF", &x, &y); }$/;"	f	struct:PT
+write	C.cpp	/^    void write () { printf("%LF %LF\\n", x, y); }$/;"	f	struct:PT
+PT	C.cpp	/^    PT() { x = 0, y = 0; }$/;"	f	struct:PT
+PT	C.cpp	/^    PT(double x, double y) : x(x), y(y) {}$/;"	f	struct:PT
+PT	C.cpp	/^    PT(const PT &p) : x(p.x), y(p.y)    {}$/;"	f	struct:PT
+operator +	C.cpp	/^    PT operator + (const PT &a) const { return PT(x + a.x, y + a.y); }$/;"	f	struct:PT
+operator -	C.cpp	/^    PT operator-(const PT &a) const { return PT(x - a.x, y - a.y); }$/;"	f	struct:PT
+operator *	C.cpp	/^    PT operator * (const double a) const { return PT(x * a, y * a); }$/;"	f	struct:PT
+operator *	C.cpp	/^    friend PT operator * (const double &a, const PT &b) { return PT(a * b.x, a * b.y); }$/;"	f	struct:PT
+operator /	C.cpp	/^    PT operator \/ (const double a) const { return PT(x \/ a, y \/ a); }$/;"	f	struct:PT
+operator ==	C.cpp	/^    bool operator == (PT a) const { return sign(a.x - x) == 0 && sign(a.y - y) == 0; }$/;"	f	struct:PT
+operator !=	C.cpp	/^    bool operator != (PT a) const { return !(*this == a); }$/;"	f	struct:PT
+operator <	C.cpp	/^    bool operator < (PT a) const { return sign(a.x - x) == 0 ? y < a.y : x < a.x; }$/;"	f	struct:PT
+operator >	C.cpp	/^    bool operator > (PT a) const { return sign(a.x - x) == 0 ? y > a.y : x > a.x; }$/;"	f	struct:PT
+norm	C.cpp	/^    double norm() { return sqrt(x * x + y * y); }$/;"	f	struct:PT
+norm2	C.cpp	/^    double norm2() { return x * x + y * y; }$/;"	f	struct:PT
+perp	C.cpp	/^    PT perp() { return PT(-y, x); }$/;"	f	struct:PT
+arg	C.cpp	/^    double arg() { double x = atan2(y, x); return x; } \/\/\/ if (sign(x) < 0) x += 2 * PI;$/;"	f	struct:PT
+truncate	C.cpp	/^    PT truncate(double r) { \/\/ returns a vector with norm r and having same direction$/;"	f	struct:PT
+operator >>	C.cpp	/^    friend istream &operator >> (istream &is, PT &p) { return is >> p.x >> p.y; }$/;"	f	struct:PT
+operator <<	C.cpp	/^    friend ostream &operator << (ostream &os, const PT &p) { return os << p.x << " " << p.y; }$/;"	f	struct:PT
+dot	C.cpp	/^inline double dot(PT a, PT b) { return a.x * b.x + a.y * b.y; }$/;"	f
+dist2	C.cpp	/^inline double dist2(PT a, PT b) { return dot(a - b, a - b); }$/;"	f
+dist	C.cpp	/^inline double dist(PT a, PT b) { return sqrt(dot(a - b, a - b)); }$/;"	f
+cross	C.cpp	/^inline double cross(PT a, PT b) { return a.x * b.y - a.y * b.x; }$/;"	f
+cross2	C.cpp	/^inline double cross2(PT a, PT b, PT c) { return cross(b - a, c - a); }$/;"	f
+orientation	C.cpp	/^inline int orientation(PT a, PT b, PT c) { return sign(cross(b - a, c - a)); }$/;"	f
+perp	C.cpp	/^PT perp(PT a) { return PT(-a.y, a.x); }$/;"	f
+rotateccw90	C.cpp	/^PT rotateccw90(PT a) { return PT(-a.y, a.x); }$/;"	f
+rotatecw90	C.cpp	/^PT rotatecw90(PT a) { return PT(a.y, -a.x); }$/;"	f
+rotateccw	C.cpp	/^PT rotateccw(PT a, double t) { return PT(a.x * cos(t) - a.y * sin(t), a.x * sin(t) + a.y * cos(t)); }$/;"	f
+rotatecw	C.cpp	/^PT rotatecw(PT a, double t) { return PT(a.x * cos(t) + a.y * sin(t), -a.x * sin(t) + a.y * cos(t)); }$/;"	f
+SQ	C.cpp	/^double SQ(double x) { return x * x; }$/;"	f
+rad_to_deg	C.cpp	/^double rad_to_deg(double r) { return (r * 180.0 \/ PI); }$/;"	f
+deg_to_rad	C.cpp	/^double deg_to_rad(double d) { return (d * PI \/ 180.0); }$/;"	f
+get_angle	C.cpp	/^double get_angle(PT a, PT b) {$/;"	f
+is_point_in_angle	C.cpp	/^bool is_point_in_angle(PT b, PT a, PT c, PT p) { \/\/ does point p lie in angle <bac$/;"	f
+half	C.cpp	/^bool half(PT p) {$/;"	f
+polar_sort	C.cpp	/^void polar_sort(vector<PT> &v) { \/\/ sort points in counterclockwise$/;"	f
+line	C.cpp	/^struct line {$/;"	s	file:
+a	C.cpp	/^    PT a, b; \/\/ goes through points a and b$/;"	m	struct:line	file:
+b	C.cpp	/^    PT a, b; \/\/ goes through points a and b$/;"	m	struct:line	file:
+v	C.cpp	/^    PT v; double c;  \/\/line form: direction vec [cross] (x, y) = c$/;"	m	struct:line	file:
+c	C.cpp	/^    PT v; double c;  \/\/line form: direction vec [cross] (x, y) = c$/;"	m	struct:line	file:
+line	C.cpp	/^    line() {}$/;"	f	struct:line
+line	C.cpp	/^    line(PT v, double c) : v(v), c(c) {$/;"	f	struct:line
+line	C.cpp	/^    line(double _a, double _b, double _c) : v( {_b, -_a}), c(-_c) {$/;"	f	struct:line
+line	C.cpp	/^    line(PT p, PT q) : v(q - p), c(cross(v, p)), a(p), b(q) {}$/;"	f	struct:line
+get_points	C.cpp	/^    pair<PT, PT> get_points() { \/\/extract any two points from this line$/;"	f	struct:line
+get_abc	C.cpp	/^    array<double, 3> get_abc() {$/;"	f	struct:line
+side	C.cpp	/^    int side(PT p) { return sign(cross(v, p) - c); }$/;"	f	struct:line
+perpendicular_through	C.cpp	/^    line perpendicular_through(PT p) { return {p, p + perp(v)}; }$/;"	f	struct:line
+translate	C.cpp	/^    line translate(PT t) { return {v, c + cross(v, t)}; }$/;"	f	struct:line
+cmp_by_projection	C.cpp	/^    bool cmp_by_projection(PT p, PT q) { return dot(v, p) < dot(v, q); }$/;"	f	struct:line
+shift_left	C.cpp	/^    line shift_left(double d) {$/;"	f	struct:line
+point_along_line	C.cpp	/^PT point_along_line(PT a, PT b, double d) {$/;"	f
+project_from_point_to_line	C.cpp	/^PT project_from_point_to_line(PT a, PT b, PT c) {$/;"	f
+reflection_from_point_to_line	C.cpp	/^PT reflection_from_point_to_line(PT a, PT b, PT c) {$/;"	f
+dist_from_point_to_line	C.cpp	/^double dist_from_point_to_line(PT a, PT b, PT c) {$/;"	f
+is_point_on_seg	C.cpp	/^bool is_point_on_seg(PT a, PT b, PT p) {$/;"	f
+project_from_point_to_seg	C.cpp	/^PT project_from_point_to_seg(PT a, PT b, PT c) {$/;"	f
+dist_from_point_to_seg	C.cpp	/^double dist_from_point_to_seg(PT a, PT b, PT c) {$/;"	f
+is_parallel	C.cpp	/^bool is_parallel(PT a, PT b, PT c, PT d) {$/;"	f
+are_lines_same	C.cpp	/^bool are_lines_same(PT a, PT b, PT c, PT d) {$/;"	f
+angle_bisector	C.cpp	/^PT angle_bisector(PT &a, PT &b, PT &c) {$/;"	f
+point_line_relation	C.cpp	/^int point_line_relation(PT a, PT b, PT p) {$/;"	f
+line_line_intersection	C.cpp	/^bool line_line_intersection(PT a, PT b, PT c, PT d, PT &ans) {$/;"	f
+seg_seg_intersection	C.cpp	/^bool seg_seg_intersection(PT a, PT b, PT c, PT d, PT &ans) {$/;"	f
+seg_seg_intersection_inside	C.cpp	/^set<PT> seg_seg_intersection_inside(PT a,  PT b,  PT c,  PT d) {$/;"	f
+seg_line_relation	C.cpp	/^int seg_line_relation(PT a, PT b, PT c, PT d) {$/;"	f
+seg_line_intersection	C.cpp	/^bool seg_line_intersection(PT a, PT b, PT c, PT d, PT &ans) {$/;"	f
+dist_from_seg_to_seg	C.cpp	/^double dist_from_seg_to_seg(PT a, PT b, PT c, PT d) {$/;"	f
+dist_from_point_to_ray	C.cpp	/^double dist_from_point_to_ray(PT a, PT b, PT c) {$/;"	f
+ray_ray_intersection	C.cpp	/^bool ray_ray_intersection(PT as, PT ad, PT bs, PT bd) {$/;"	f
+ray_ray_distance	C.cpp	/^double ray_ray_distance(PT as, PT ad, PT bs, PT bd) {$/;"	f
+circle	C.cpp	/^struct circle {$/;"	s	file:
+p	C.cpp	/^    PT p; double r;$/;"	m	struct:circle	file:
+r	C.cpp	/^    PT p; double r;$/;"	m	struct:circle	file:
+circle	C.cpp	/^    circle() {}$/;"	f	struct:circle
+circle	C.cpp	/^    circle(PT _p, double _r): p(_p), r(_r) {};$/;"	f	struct:circle
+circle	C.cpp	/^    circle(double x, double y, double _r): p(PT(x, y)), r(_r) {};$/;"	f	struct:circle
+circle	C.cpp	/^    circle(PT a, PT b, PT c) {$/;"	f	struct:circle
+sector	C.cpp	/^    Tf sector(Tf alpha) { return r * r * 0.5 * (alpha - sin(alpha)); }$/;"	f	struct:circle
+circle	C.cpp	/^    circle(PT a, PT b, PT c, bool t) {$/;"	f	struct:circle
+operator ==	C.cpp	/^    bool operator == (circle v) { return p == v.p && sign(r - v.r) == 0; }$/;"	f	struct:circle
+area	C.cpp	/^    double area() { return PI * r * r; }$/;"	f	struct:circle
+circumference	C.cpp	/^    double circumference() { return 2.0 * PI * r; }$/;"	f	struct:circle
+circle_point_relation	C.cpp	/^int circle_point_relation(PT p, double r, PT b) {$/;"	f
+circle_line_relation	C.cpp	/^int circle_line_relation(PT p, double r, PT a, PT b) {$/;"	f
+circle_line_intersection	C.cpp	/^vector<PT> circle_line_intersection(PT c, double r, PT a, PT b) {$/;"	f
+circle_circle_relation	C.cpp	/^int circle_circle_relation(PT a, double r, PT b, double R) {$/;"	f
+circle_circle_intersection	C.cpp	/^vector<PT> circle_circle_intersection(PT a, double r, PT b, double R) {$/;"	f
+get_circle	C.cpp	/^int get_circle(PT a, PT b, double r, circle &c1, circle &c2) {$/;"	f
+get_circle	C.cpp	/^int get_circle(line u, PT q, double r1, circle &c1, circle &c2) {$/;"	f
+circle_circle_area	C.cpp	/^double circle_circle_area(PT a, double r1, PT b, double r2) {$/;"	f
+tangent_lines_from_point	C.cpp	/^int tangent_lines_from_point(PT p, double r, PT q, line &u, line &v) {$/;"	f
+tangents_lines_from_circle	C.cpp	/^int tangents_lines_from_circle(PT c1, double r1, PT c2, double r2, bool inner, line &u, line &v) {$/;"	f
+CircleUnion	C.cpp	/^struct CircleUnion { \/\/\/ OK$/;"	s	file:
+n	C.cpp	/^    int n;$/;"	m	struct:CircleUnion	file:
+x	C.cpp	/^    double x[2020], y[2020], r[2020];$/;"	m	struct:CircleUnion	file:
+y	C.cpp	/^    double x[2020], y[2020], r[2020];$/;"	m	struct:CircleUnion	file:
+r	C.cpp	/^    double x[2020], y[2020], r[2020];$/;"	m	struct:CircleUnion	file:
+covered	C.cpp	/^    int covered[2020];$/;"	m	struct:CircleUnion	file:
+seg	C.cpp	/^    vector<pair<double, double> > seg, cover;$/;"	m	struct:CircleUnion	file:
+cover	C.cpp	/^    vector<pair<double, double> > seg, cover;$/;"	m	struct:CircleUnion	file:
+arc	C.cpp	/^    double arc, pol;$/;"	m	struct:CircleUnion	file:
+pol	C.cpp	/^    double arc, pol;$/;"	m	struct:CircleUnion	file:
+sign	C.cpp	/^    inline int sign(double x) {return x < -eps ? -1 : x > eps;}$/;"	f	struct:CircleUnion
+sign	C.cpp	/^    inline int sign(double x, double y) {return sign(x - y);}$/;"	f	struct:CircleUnion
+SQ	C.cpp	/^    inline double SQ(const double x) {return x * x;}$/;"	f	struct:CircleUnion
+dist	C.cpp	/^    inline double dist(double x1, double y1, double x2, double y2) {return sqrt(SQ(x1 - x2) + SQ(y1 - y2));}$/;"	f	struct:CircleUnion
+angle	C.cpp	/^    inline double angle(double A, double B, double C) {$/;"	f	struct:CircleUnion
+CircleUnion	C.cpp	/^    CircleUnion() {$/;"	f	struct:CircleUnion
+init	C.cpp	/^    void init() {$/;"	f	struct:CircleUnion
+add	C.cpp	/^    void add(double xx, double yy, double rr) {$/;"	f	struct:CircleUnion
+getarea	C.cpp	/^    void getarea(int i, double lef, double rig) {$/;"	f	struct:CircleUnion
+circle_solve	C.cpp	/^    double circle_solve() {$/;"	f	struct:CircleUnion
+CU	C.cpp	/^} CU;$/;"	v	typeref:struct:CircleUnion
+area_of_triangle	C.cpp	/^double area_of_triangle(PT a, PT b, PT c) {$/;"	f
+is_point_in_triangle	C.cpp	/^int is_point_in_triangle(PT a, PT b, PT c, PT p) {$/;"	f
+perimeter	C.cpp	/^double perimeter(vector<PT> &p) {$/;"	f
+area	C.cpp	/^double area(vector<PT> &p) {$/;"	f
+centroid	C.cpp	/^PT centroid(vector<PT> &p) {$/;"	f
+get_direction	C.cpp	/^bool get_direction(vector<PT> &p) {$/;"	f
+geometric_median	C.cpp	/^PT geometric_median(vector<PT> p) {$/;"	f
+convex_hull	C.cpp	/^vector<PT> convex_hull(vector<PT> p) {$/;"	f
+is_convex	C.cpp	/^bool is_convex(vector<PT> &p) {$/;"	f
+is_point_in_convex	C.cpp	/^int is_point_in_convex(vector<PT> &p, const PT& x) { \/\/ O(log n)$/;"	f
+is_point_on_polygon	C.cpp	/^bool is_point_on_polygon(vector<PT> &p, const PT& z) {$/;"	f
+winding_number	C.cpp	/^int winding_number(vector<PT> &p, const PT& z) { \/\/ O(n)$/;"	f
+is_point_in_polygon	C.cpp	/^int is_point_in_polygon(vector<PT> &p, const PT& z) { \/\/ O(n)$/;"	f
+extreme_vertex	C.cpp	/^int extreme_vertex(vector<PT> &p, const PT &z, const int top) { \/\/ O(log n) \/\/\/ not tested$/;"	f
+diameter	C.cpp	/^double diameter(vector<PT> &p) {$/;"	f
+width	C.cpp	/^double width(vector<PT> &p) {$/;"	f
+minimum_enclosing_rectangle	C.cpp	/^double minimum_enclosing_rectangle(vector<PT> &p) {$/;"	f
+minimum_enclosing_circle	C.cpp	/^circle minimum_enclosing_circle(vector<PT> p) { \/\/\/ vector<PT> &p$/;"	f
+cut	C.cpp	/^vector<PT> cut(vector<PT> &p, PT a, PT b) { \/\/\/\/ may remove from notebook$/;"	f
+polygon_line_intersection	C.cpp	/^double polygon_line_intersection(vector<PT> p, PT a, PT b) {$/;"	f
+convex_line_intersection	C.cpp	/^pair<PT, PT> convex_line_intersection(vector<PT> &p, PT a, PT b) {$/;"	f
+dist_from_point_to_polygon	C.cpp	/^double dist_from_point_to_polygon(vector<PT> &v, PT p) { \/\/ O(log n)$/;"	f
+dist_from_polygon_to_line	C.cpp	/^double dist_from_polygon_to_line(vector<PT> &p, PT a, PT b, int top) { \/\/O(log n) \/\/\/ NOT TESTED$/;"	f
+dist_from_polygon_to_polygon	C.cpp	/^double dist_from_polygon_to_polygon(vector<PT> &p1, vector<PT> &p2) { \/\/ O(n log n)$/;"	f
+maximum_dist_from_polygon_to_polygon	C.cpp	/^double maximum_dist_from_polygon_to_polygon(vector<PT> &u, vector<PT> &v) { \/\/O(n)$/;"	f
+point_poly_tangent	C.cpp	/^pair<PT, int> point_poly_tangent(vector<PT> &p, PT Q, int dir, int l, int r) {$/;"	f
+tangents_from_point_to_polygon	C.cpp	/^pair<int, int> tangents_from_point_to_polygon(vector<PT> &p, PT Q) {$/;"	f
+rat	C.cpp	/^double rat(PT a, PT b, PT p) {$/;"	f
+polygon_union	C.cpp	/^double polygon_union(vector<vector<PT>> &p) {$/;"	f
+HP	C.cpp	/^struct HP {$/;"	s	file:
+a	C.cpp	/^    PT a, b;$/;"	m	struct:HP	file:
+b	C.cpp	/^    PT a, b;$/;"	m	struct:HP	file:
+HP	C.cpp	/^    HP() {}$/;"	f	struct:HP
+HP	C.cpp	/^    HP(PT a, PT b) : a(a), b(b) {}$/;"	f	struct:HP
+HP	C.cpp	/^    HP(const HP& rhs) : a(rhs.a), b(rhs.b) {}$/;"	f	struct:HP
+operator <	C.cpp	/^    int operator < (const HP& rhs) const {$/;"	f	struct:HP
+line_line_intersection	C.cpp	/^    PT line_line_intersection(PT a, PT b, PT c, PT d) {$/;"	f	struct:HP
+intersection	C.cpp	/^    PT intersection(const HP &v) {$/;"	f	struct:HP
+check	C.cpp	/^int check(HP a, HP b, HP c) {$/;"	f
+half_plane_intersection	C.cpp	/^vector<PT> half_plane_intersection(vector<HP> h) {$/;"	f
+minkowski_sum	C.cpp	/^vector<PT> minkowski_sum(vector<PT> &a, vector<PT> &b) {$/;"	f
+triangle_circle_intersection	C.cpp	/^double triangle_circle_intersection(PT c, double r, PT a, PT b) {$/;"	f
+polygon_circle_intersection	C.cpp	/^double polygon_circle_intersection(vector<PT> &v, PT p, double r) {$/;"	f
+maximum_circle_cover	C.cpp	/^double maximum_circle_cover(vector<PT> p, double r, circle &c) {$/;"	f
+maximum_inscribed_circle	C.cpp	/^double maximum_inscribed_circle(vector<PT> p) {$/;"	f
+solve	C.cpp	/^void solve()$/;"	f
+main	C.cpp	/^int main()$/;"	f
+mx	F.cpp	6;"	d	file:
+ll	F.cpp	7;"	d	file:
+mod	F.cpp	8;"	d	file:
+a	F.cpp	/^int a[mx];$/;"	v
+ch	F.cpp	/^char ch[mx];$/;"	v
+n	F.cpp	/^int n, m, ii, k;$/;"	v
+m	F.cpp	/^int n, m, ii, k;$/;"	v
+ii	F.cpp	/^int n, m, ii, k;$/;"	v
+k	F.cpp	/^int n, m, ii, k;$/;"	v
+solve	F.cpp	/^void solve()$/;"	f
+main	F.cpp	/^int main()$/;"	f
+mx	solution.cpp	6;"	d	file:
+ll	solution.cpp	7;"	d	file:
+mod	solution.cpp	8;"	d	file:
+a	solution.cpp	/^int a[mx];$/;"	v
+ch	solution.cpp	/^char ch[mx];$/;"	v
+n	solution.cpp	/^int n, m, tt, k;$/;"	v
+m	solution.cpp	/^int n, m, tt, k;$/;"	v
+tt	solution.cpp	/^int n, m, tt, k;$/;"	v
+k	solution.cpp	/^int n, m, tt, k;$/;"	v
+inv	solution.cpp	/^ll inv[mx], invfact[mx], fact[mx];$/;"	v
+invfact	solution.cpp	/^ll inv[mx], invfact[mx], fact[mx];$/;"	v
+fact	solution.cpp	/^ll inv[mx], invfact[mx], fact[mx];$/;"	v
+add	solution.cpp	/^ll add(ll a, ll b)$/;"	f
+sub	solution.cpp	/^ll sub(ll a, ll b)$/;"	f
+mul	solution.cpp	/^ll mul(ll a, ll b)$/;"	f
+bigmod	solution.cpp	/^ll bigmod(ll a, ll b) {$/;"	f
+Fact	solution.cpp	/^void Fact()$/;"	f
+mod_inverse	solution.cpp	/^void mod_inverse()$/;"	f
+solve	solution.cpp	/^void solve()$/;"	f
+main	solution.cpp	/^int main()$/;"	f
+area_of_triangle	Polygon_ConvexHull.cpp	/^double area_of_triangle(PT a,PT b,PT c){ $/;"	f
+is_point_in_triangle	Polygon_ConvexHull.cpp	/^int is_point_in_triangle(PT a,PT b,PT c,PT p){ $/;"	f
+perimeter	Polygon_ConvexHull.cpp	/^double perimeter(vector<PT>&p){ $/;"	f
+area	Polygon_ConvexHull.cpp	/^double area(vector<PT>&p){ $/;"	f
+centroid	Polygon_ConvexHull.cpp	/^PT centroid(vector<PT>&p){ $/;"	f
+get_direction	Polygon_ConvexHull.cpp	/^bool get_direction(vector<PT>&p){ $/;"	f
+geometric_median	Polygon_ConvexHull.cpp	/^PT geometric_median(vector<PT>p){ $/;"	f
+convex_hull	Polygon_ConvexHull.cpp	/^vector<PT>convex_hull(vector<PT>&p){ $/;"	f
+is_convex	Polygon_ConvexHull.cpp	/^bool is_convex(vector<PT>&p){ $/;"	f
+is_point_in_convex	Polygon_ConvexHull.cpp	/^int is_point_in_convex(vector<PT>&p,const PT&x){ \/\/O(log n) $/;"	f
+is_point_on_polygon	Polygon_ConvexHull.cpp	/^bool is_point_on_polygon(vector<PT>&p,const PT&z){ $/;"	f
+winding_number	Polygon_ConvexHull.cpp	/^int winding_number(vector<PT>&p,const PT&z){ \/\/O(n) $/;"	f
+is_point_in_polygon	Polygon_ConvexHull.cpp	/^int is_point_in_polygon(vector<PT>&p,const PT&z){ \/\/O(n) $/;"	f
+extreme_vertex	Polygon_ConvexHull.cpp	/^int extreme_vertex(vector<PT>&p,const PT&z,const int top){ \/\/O(log n) \/\/\/not tested$/;"	f
+diameter	Polygon_ConvexHull.cpp	/^double diameter(vector<PT>&p){ $/;"	f
+width	Polygon_ConvexHull.cpp	/^double width(vector<PT>&p){ $/;"	f
+minimum_enclosing_rectangle	Polygon_ConvexHull.cpp	/^double minimum_enclosing_rectangle(vector<PT>&p){ $/;"	f
+CircleUnion	CircleUnion.cpp	/^struct CircleUnion{ \/\/\/OK$/;"	s	file:
+n	CircleUnion.cpp	/^ int n;$/;"	m	struct:CircleUnion	file:
+x	CircleUnion.cpp	/^ double x[2020],y[2020],r[2020];$/;"	m	struct:CircleUnion	file:
+y	CircleUnion.cpp	/^ double x[2020],y[2020],r[2020];$/;"	m	struct:CircleUnion	file:
+r	CircleUnion.cpp	/^ double x[2020],y[2020],r[2020];$/;"	m	struct:CircleUnion	file:
+covered	CircleUnion.cpp	/^ int covered[2020];$/;"	m	struct:CircleUnion	file:
+seg	CircleUnion.cpp	/^ vector<pair<double,double>>seg,cover;$/;"	m	struct:CircleUnion	file:
+cover	CircleUnion.cpp	/^ vector<pair<double,double>>seg,cover;$/;"	m	struct:CircleUnion	file:
+arc	CircleUnion.cpp	/^ double arc,pol;$/;"	m	struct:CircleUnion	file:
+pol	CircleUnion.cpp	/^ double arc,pol;$/;"	m	struct:CircleUnion	file:
+sign	CircleUnion.cpp	/^ inline int sign(double x){ return x<-eps?-1:x>eps;}$/;"	f	struct:CircleUnion
+sign	CircleUnion.cpp	/^ inline int sign(double x,double y){ return sign(x-y);}$/;"	f	struct:CircleUnion
+SQ	CircleUnion.cpp	/^ inline double SQ(const double x){ return x*x;}$/;"	f	struct:CircleUnion
+dist	CircleUnion.cpp	/^ inline double dist(double x1,double y1,double x2,double y2){ return sqrt(SQ(x1-x2) +SQ(y1-y2));}$/;"	f	struct:CircleUnion
+angle	CircleUnion.cpp	/^ inline double angle(double A,double B,double C){ $/;"	f	struct:CircleUnion
+CircleUnion	CircleUnion.cpp	/^ CircleUnion(){ $/;"	f	struct:CircleUnion
+init	CircleUnion.cpp	/^ void init(){ $/;"	f	struct:CircleUnion
+add	CircleUnion.cpp	/^ void add(double xx,double yy,double rr){ $/;"	f	struct:CircleUnion
+getarea	CircleUnion.cpp	/^ void getarea(int i,double lef,double rig){ $/;"	f	struct:CircleUnion
+circle_solve	CircleUnion.cpp	/^ double circle_solve(){ $/;"	f	struct:CircleUnion
+CU	CircleUnion.cpp	/^}CU;/;"	v	typeref:struct:CircleUnion
+mx	mygeo.cpp	3;"	d	file:
+ll	mygeo.cpp	4;"	d	file:
+md	mygeo.cpp	5;"	d	file:
+T	mygeo.cpp	/^typedef long double T;$/;"	t	file:
+Tf	mygeo.cpp	/^typedef double Tf;$/;"	t	file:
+Ti	mygeo.cpp	/^typedef Tf Ti;$/;"	t	file:
+PI	mygeo.cpp	/^const T PI = acos(-1), EPS = 1e-9;$/;"	v
+EPS	mygeo.cpp	/^const T PI = acos(-1), EPS = 1e-9;$/;"	v
+dcmp	mygeo.cpp	/^int dcmp(T x) { return abs(x) < EPS ? 0 : (x < 0 ? -1 : 1);}$/;"	f
+Point	mygeo.cpp	/^struct Point {$/;"	s	file:
+x	mygeo.cpp	/^	T x, y;$/;"	m	struct:Point	file:
+y	mygeo.cpp	/^	T x, y;$/;"	m	struct:Point	file:
+Point	mygeo.cpp	/^	Point(T x = 0, T y = 0) : x(x), y(y) {}$/;"	f	struct:Point
+read	mygeo.cpp	/^	void read () { scanf("%lf%lf", &x, &y); }$/;"	f	struct:Point
+write	mygeo.cpp	/^	void write () { printf("%lf %lf\\n", x, y); }$/;"	f	struct:Point
+operator +	mygeo.cpp	/^	Point operator + (const Point& u) const { return Point(x + u.x, y + u.y); }$/;"	f	struct:Point
+operator -	mygeo.cpp	/^	Point operator - (const Point& u) const { return Point(x - u.x, y - u.y); }$/;"	f	struct:Point
+operator *	mygeo.cpp	/^	Point operator * (const long long u) const { return Point(x * u, y * u); }$/;"	f	struct:Point
+operator *	mygeo.cpp	/^	Point operator*(T d) {return {x * d, y * d};}$/;"	f	struct:Point
+operator /	mygeo.cpp	/^	Point operator\/(T d) {return {x \/ d, y \/ d};} \/\/ only for floatingpoint$/;"	f	struct:Point
+operator ==	mygeo.cpp	/^	bool operator == (const Point& u) const { return dcmp(x - u.x) == 0 && dcmp(y - u.y) == 0; }$/;"	f	struct:Point
+operator !=	mygeo.cpp	/^	bool operator != (const Point& u) const { return !(*this == u); }$/;"	f	struct:Point
+operator <	mygeo.cpp	/^	bool operator < (const Point& u) const { return dcmp(x - u.x) < 0 || (dcmp(x - u.x) == 0 && dcmp(y - u.y) < 0); }$/;"	f	struct:Point
+operator <<	mygeo.cpp	/^	friend ostream& operator<<(ostream& os, Point p) {$/;"	f	struct:Point
+operator >>	mygeo.cpp	/^	friend istream &operator >> (istream &is, Point &p) { return is >> p.x >> p.y; }$/;"	f	struct:Point
+sgn	mygeo.cpp	/^template <typename T> int sgn(T x) {$/;"	f
+radian	mygeo.cpp	/^T radian(T a) {return a * PI \/ 180.0;}$/;"	f
+degree	mygeo.cpp	/^T degree(T a) {return a * 180.0 \/ PI;}$/;"	f
+sq	mygeo.cpp	/^T sq(Point p) {return p.x * p.x + p.y * p.y;}$/;"	f
+abs	mygeo.cpp	/^double abs(Point p) {return sqrt(sq(p));} \/\/\/ length$/;"	f
+translate	mygeo.cpp	/^Point translate(Point v, Point p) {return p + v;}$/;"	f
+scale	mygeo.cpp	/^Point scale(Point c, double factor, Point p) {$/;"	f
+rot	mygeo.cpp	/^Point rot(Point p, double a) {$/;"	f
+perp	mygeo.cpp	/^Point perp(Point p) {return { -p.y, p.x};}$/;"	f
+dot	mygeo.cpp	/^T dot(Point v, Point w) {return v.x * w.x + v.y * w.y;}$/;"	f
+cross	mygeo.cpp	/^T cross(Point v, Point w) {return v.x * w.y - v.y * w.x;}$/;"	f
+linearTransfo	mygeo.cpp	/^Point linearTransfo(Point p, Point q, Point r, Point fp, Point fq) {$/;"	f
+isPerp	mygeo.cpp	/^bool isPerp(Point v, Point w) {return dot(v, w) == 0;}$/;"	f
+angle	mygeo.cpp	/^double angle(Point v, Point w) {$/;"	f
+angle	mygeo.cpp	/^double angle(Point v, Point w, bool bk) {$/;"	f
+orient	mygeo.cpp	/^int orient(Point a, Point b, Point c) {return dcmp(cross(b - a, c - a));} \/\/\/ OK$/;"	f
+inAngle	mygeo.cpp	/^bool inAngle(Point a, Point b, Point c, Point p) {$/;"	f
+orientedAngle	mygeo.cpp	/^double orientedAngle(Point a, Point b, Point c) {$/;"	f
+isConvex	mygeo.cpp	/^bool isConvex(vector<Point> p) {$/;"	f
+line	mygeo.cpp	/^struct line {$/;"	s	file:
+tem1	mygeo.cpp	/^	Point tem1, tem2;$/;"	m	struct:line	file:
+tem2	mygeo.cpp	/^	Point tem1, tem2;$/;"	m	struct:line	file:
+v	mygeo.cpp	/^	Point v; T c;$/;"	m	struct:line	file:
+c	mygeo.cpp	/^	Point v; T c;$/;"	m	struct:line	file:
+line	mygeo.cpp	/^	line(Point v, T c) : v(v), c(c) {}$/;"	f	struct:line
+line	mygeo.cpp	/^	line(T a, T b, T c) : v( {b, -a}), c(c) {}$/;"	f	struct:line
+line	mygeo.cpp	/^	line(Point p, Point q) : v(q - p), tem1(p), tem2(q), c(cross(v, p)) {}$/;"	f	struct:line
+side	mygeo.cpp	/^	T side(Point p) {return cross(v, p) - c;}$/;"	f	struct:line
+dist	mygeo.cpp	/^	T dist(Point p) {return abs(side(p)) \/ abs(v);}$/;"	f	struct:line
+sqDist	mygeo.cpp	/^	T sqDist(Point p) {return side(p) * side(p) \/ (double)sq(v);}$/;"	f	struct:line
+perPointhrough	mygeo.cpp	/^	line perPointhrough(Point p) {return {p, p + perp(v)};}$/;"	f	struct:line
+cmpProj	mygeo.cpp	/^	bool cmpProj(Point p, Point q) {$/;"	f	struct:line
+translate	mygeo.cpp	/^	line translate(Point t) {return {v, c + cross(v, t)};}$/;"	f	struct:line
+shiftLeft	mygeo.cpp	/^	line shiftLeft(double dist) {return {v, c + dist * abs(v)};}$/;"	f	struct:line
+proj	mygeo.cpp	/^	Point proj(Point p) {return p - perp(v) * side(p) \/ sq(v);}$/;"	f	struct:line
+refl	mygeo.cpp	/^	Point refl(Point p) {return p - perp(v) * 2 * side(p) \/ sq(v);}$/;"	f	struct:line
+lineLineIntersection	mygeo.cpp	/^bool lineLineIntersection(Point p, Point v, Point q, Point w, Point& o) {$/;"	f
+Dist	mygeo.cpp	/^T Dist(line l2, line l1) {return (l2.c - l1.c) \/ abs(l1.v);}$/;"	f
+inter	mygeo.cpp	/^bool inter(line l1, line l2, Point &out) {$/;"	f
+bisector	mygeo.cpp	/^line bisector(line l1, line l2, bool interior) {$/;"	f
+inDisk	mygeo.cpp	/^bool inDisk(Point a, Point b, Point p) {$/;"	f
+onSegment	mygeo.cpp	/^bool onSegment(Point a, Point b, Point p) {$/;"	f
+properInter	mygeo.cpp	/^bool properInter(Point a, Point b, Point c, Point d, Point &out) {$/;"	f
+cmpX	mygeo.cpp	/^struct cmpX {$/;"	s	file:
+operator ()	mygeo.cpp	/^	bool operator()(Point a, Point b) const {$/;"	f	struct:cmpX
+inters	mygeo.cpp	/^set<Point, cmpX> inters(Point a, Point b, Point c, Point d) {$/;"	f
+segPoint	mygeo.cpp	/^double segPoint(Point a, Point b, Point p) {$/;"	f
+segSeg	mygeo.cpp	/^double segSeg(Point a, Point b, Point c, Point d) {$/;"	f
+areaTriangle	mygeo.cpp	/^T areaTriangle(Point a, Point b, Point c) {$/;"	f
+areaPolygon	mygeo.cpp	/^T areaPolygon(vector<Point> p) {$/;"	f
+above	mygeo.cpp	/^bool above(Point a, Point p) {$/;"	f
+crossesRay	mygeo.cpp	/^bool crossesRay(Point a, Point p, Point q) {$/;"	f
+inPolygon	mygeo.cpp	/^bool inPolygon(vector<Point> p, Point a, bool strict = true) {$/;"	f
+Circle	mygeo.cpp	/^struct Circle {$/;"	s	file:
+o	mygeo.cpp	/^	Point o;$/;"	m	struct:Circle	file:
+r	mygeo.cpp	/^	T r;$/;"	m	struct:Circle	file:
+Circle	mygeo.cpp	/^	Circle(Point o = Point(0, 0), T r = 0) : o(o), r(r) {}$/;"	f	struct:Circle
+contains	mygeo.cpp	/^	bool contains(Point p) {$/;"	f	struct:Circle
+point	mygeo.cpp	/^	Point point(Tf rad) {$/;"	f	struct:Circle
+area	mygeo.cpp	/^	T area(T rad = PI + PI) { return rad * r * r \/ 2; }$/;"	f	struct:Circle
+sector	mygeo.cpp	/^	T sector(T alpha) { return r * r * 0.5 * (alpha - sin(alpha)); }$/;"	f	struct:Circle
+Perimeter	mygeo.cpp	/^	T Perimeter() const {$/;"	f	struct:Circle
+operator ==	mygeo.cpp	/^	bool operator==(const Circle& c) const {$/;"	f	struct:Circle
+circumCenter	mygeo.cpp	/^Point circumCenter(Point a, Point b, Point c) { \/\/\/ OK$/;"	f
+circleLine	mygeo.cpp	/^int circleLine(Circle C, line l, pair<Point, Point> &out) {$/;"	f
+circleCircle	mygeo.cpp	/^int circleCircle(Point o1, double r1, Point o2, double r2, pair<Point, Point> &out) {$/;"	f
+tangents	mygeo.cpp	/^int tangents(Point o1, double r1, Point o2, double r2, bool inner, vector <pair<Point, Point >> &out) {$/;"	f
+tangents	mygeo.cpp	/^int tangents(Circle C1, Circle C2, bool inner, vector <pair<Point, Point >> &out) {$/;"	f
+Polygon	mygeo.cpp	/^typedef vector<Point> Polygon;$/;"	t	file:
+convexHull	mygeo.cpp	/^int convexHull(Polygon p, Polygon &ch) { \/\/\/ OK$/;"	f
+main	mygeo.cpp	/^int main()$/;"	f
+mx	brute.cpp	6;"	d	file:
+ll	brute.cpp	7;"	d	file:
+mod	brute.cpp	8;"	d	file:
+a	brute.cpp	/^int a[mx];$/;"	v
+ch	brute.cpp	/^char ch[mx];$/;"	v
+n	brute.cpp	/^int n, m, tt, k;$/;"	v
+m	brute.cpp	/^int n, m, tt, k;$/;"	v
+tt	brute.cpp	/^int n, m, tt, k;$/;"	v
+k	brute.cpp	/^int n, m, tt, k;$/;"	v
+inv	brute.cpp	/^ll inv[mx], invfact[mx], fact[mx];$/;"	v
+invfact	brute.cpp	/^ll inv[mx], invfact[mx], fact[mx];$/;"	v
+fact	brute.cpp	/^ll inv[mx], invfact[mx], fact[mx];$/;"	v
+add	brute.cpp	/^ll add(ll a, ll b)$/;"	f
+sub	brute.cpp	/^ll sub(ll a, ll b)$/;"	f
+mul	brute.cpp	/^ll mul(ll a, ll b)$/;"	f
+bigmod	brute.cpp	/^ll bigmod(ll a, ll b) {$/;"	f
+Fact	brute.cpp	/^void Fact()$/;"	f
+mod_inverse	brute.cpp	/^void mod_inverse()$/;"	f
+solve	brute.cpp	/^void solve()$/;"	f
+main	brute.cpp	/^int main()$/;"	f
+inf	3D_Geo.cpp	/^const double inf = 1e100;$/;"	v
+eps	3D_Geo.cpp	/^const double eps = 1e-9;$/;"	v
+PI	3D_Geo.cpp	/^const double PI = acos((double) - 1.0);$/;"	v
+sign	3D_Geo.cpp	/^int sign(double x) { return (x > eps) - (x < -eps); }$/;"	f
+PT	3D_Geo.cpp	/^struct PT {$/;"	s	file:
+x	3D_Geo.cpp	/^    double x, y;$/;"	m	struct:PT	file:
+y	3D_Geo.cpp	/^    double x, y;$/;"	m	struct:PT	file:
+PT	3D_Geo.cpp	/^    PT() { x = 0, y = 0; }$/;"	f	struct:PT
+PT	3D_Geo.cpp	/^    PT(double x, double y) : x(x), y(y) {}$/;"	f	struct:PT
+PT	3D_Geo.cpp	/^    PT(const PT &p) : x(p.x), y(p.y)    {}$/;"	f	struct:PT
+scan	3D_Geo.cpp	/^    void scan() { cin >> x >> y; }$/;"	f	struct:PT
+operator +	3D_Geo.cpp	/^    PT operator + (const PT &a) const { return PT(x + a.x, y + a.y); }$/;"	f	struct:PT
+operator -	3D_Geo.cpp	/^    PT operator - (const PT &a) const { return PT(x - a.x, y - a.y); }$/;"	f	struct:PT
+operator *	3D_Geo.cpp	/^    PT operator * (const double a) const { return PT(x * a, y * a); }$/;"	f	struct:PT
+operator *	3D_Geo.cpp	/^    friend PT operator * (const double &a, const PT &b) { return PT(a * b.x, a * b.y); }$/;"	f	struct:PT
+operator /	3D_Geo.cpp	/^    PT operator \/ (const double a) const { return PT(x \/ a, y \/ a); }$/;"	f	struct:PT
+operator ==	3D_Geo.cpp	/^    bool operator == (PT a) const { return sign(a.x - x) == 0 && sign(a.y - y) == 0; }$/;"	f	struct:PT
+operator !=	3D_Geo.cpp	/^    bool operator != (PT a) const { return !(*this == a); }$/;"	f	struct:PT
+operator <	3D_Geo.cpp	/^    bool operator < (PT a) const { return sign(a.x - x) == 0 ? y < a.y : x < a.x; }$/;"	f	struct:PT
+operator >	3D_Geo.cpp	/^    bool operator > (PT a) const { return sign(a.x - x) == 0 ? y > a.y : x > a.x; }$/;"	f	struct:PT
+norm	3D_Geo.cpp	/^    double norm() { return sqrt(x * x + y * y); }$/;"	f	struct:PT
+norm2	3D_Geo.cpp	/^    double norm2() { return x * x + y * y; }$/;"	f	struct:PT
+perp	3D_Geo.cpp	/^    PT perp() { return PT(-y, x); }$/;"	f	struct:PT
+arg	3D_Geo.cpp	/^    double arg() { return atan2(y, x); }$/;"	f	struct:PT
+truncate	3D_Geo.cpp	/^    PT truncate(double r) { \/\/ returns a vector with norm r and having same direction$/;"	f	struct:PT
+dot	3D_Geo.cpp	/^inline double dot(PT a, PT b) { return a.x * b.x + a.y * b.y; }$/;"	f
+dist2	3D_Geo.cpp	/^inline double dist2(PT a, PT b) { return dot(a - b, a - b); }$/;"	f
+dist	3D_Geo.cpp	/^inline double dist(PT a, PT b) { return sqrt(dot(a - b, a - b)); }$/;"	f
+cross	3D_Geo.cpp	/^inline double cross(PT a, PT b) { return a.x * b.y - a.y * b.x; }$/;"	f
+orientation	3D_Geo.cpp	/^inline int orientation(PT a, PT b, PT c) { return sign(cross(b - a, c - a)); }$/;"	f
+perp	3D_Geo.cpp	/^PT perp(PT a) { return PT(-a.y, a.x); }$/;"	f
+rotateccw90	3D_Geo.cpp	/^PT rotateccw90(PT a) { return PT(-a.y, a.x); }$/;"	f
+rotatecw90	3D_Geo.cpp	/^PT rotatecw90(PT a) { return PT(a.y, -a.x); }$/;"	f
+rotateccw	3D_Geo.cpp	/^PT rotateccw(PT a, double t) { return PT(a.x * cos(t) - a.y * sin(t), a.x * sin(t) + a.y * cos(t)); }$/;"	f
+rotatecw	3D_Geo.cpp	/^PT rotatecw(PT a, double t) { return PT(a.x * cos(t) + a.y * sin(t), -a.x * sin(t) + a.y * cos(t)); }$/;"	f
+SQ	3D_Geo.cpp	/^double SQ(double x) { return x * x; }$/;"	f
+rad_to_deg	3D_Geo.cpp	/^double rad_to_deg(double r) { return (r * 180.0 \/ PI); }$/;"	f
+deg_to_rad	3D_Geo.cpp	/^double deg_to_rad(double d) { return (d * PI \/ 180.0); }$/;"	f
+get_angle	3D_Geo.cpp	/^double get_angle(PT a, PT b) {$/;"	f
+p3	3D_Geo.cpp	/^struct p3 {$/;"	s	file:
+x	3D_Geo.cpp	/^    double x, y, z;$/;"	m	struct:p3	file:
+y	3D_Geo.cpp	/^    double x, y, z;$/;"	m	struct:p3	file:
+z	3D_Geo.cpp	/^    double x, y, z;$/;"	m	struct:p3	file:
+p3	3D_Geo.cpp	/^    p3() { x = 0, y = 0; z = 0; }$/;"	f	struct:p3
+p3	3D_Geo.cpp	/^    p3(double x, double y, double z) : x(x), y(y), z(z) {}$/;"	f	struct:p3
+p3	3D_Geo.cpp	/^    p3(const p3 &p) : x(p.x), y(p.y), z(p.z)    {}$/;"	f	struct:p3
+scan	3D_Geo.cpp	/^    void scan() { cin >> x >> y >> z; }$/;"	f	struct:p3
+operator +	3D_Geo.cpp	/^    p3 operator + (const p3 &a) const { return p3(x + a.x, y + a.y, z + a.z); }$/;"	f	struct:p3
+operator -	3D_Geo.cpp	/^    p3 operator - (const p3 &a) const { return p3(x - a.x, y - a.y, z - a.z); }$/;"	f	struct:p3
+operator *	3D_Geo.cpp	/^    p3 operator * (const double a) const { return p3(x * a, y * a, z * a); }$/;"	f	struct:p3
+operator *	3D_Geo.cpp	/^    friend p3 operator * (const double &a, const p3 &b) { return p3(a * b.x, a * b.y, a * b.z); }$/;"	f	struct:p3
+operator /	3D_Geo.cpp	/^    p3 operator \/ (const double a) const { return p3(x \/ a, y \/ a, z \/ a); }$/;"	f	struct:p3
+operator ==	3D_Geo.cpp	/^    bool operator == (p3 a) const { return sign(a.x - x) == 0 && sign(a.y - y) == 0 && sign(a.z - z) == 0; }$/;"	f	struct:p3
+operator !=	3D_Geo.cpp	/^    bool operator != (p3 a) const { return !(*this == a); }$/;"	f	struct:p3
+abs	3D_Geo.cpp	/^    double abs() { return sqrt(x * x + y * y + z * z); }$/;"	f	struct:p3
+sq	3D_Geo.cpp	/^    double sq() { return x * x + y * y + z * z; }$/;"	f	struct:p3
+unit	3D_Geo.cpp	/^    p3 unit() { return *this \/ abs(); }$/;"	f	struct:p3
+operator |	3D_Geo.cpp	/^double operator | (p3 v, p3 w) { \/\/dot product$/;"	f
+operator *	3D_Geo.cpp	/^p3 operator * (p3 v, p3 w) { \/\/cross product$/;"	f
+sq	3D_Geo.cpp	/^double sq(p3 v) { return v | v; }$/;"	f
+abs	3D_Geo.cpp	/^double abs(p3 v) { return sqrt(sq(v)); }$/;"	f
+unit	3D_Geo.cpp	/^p3 unit(p3 v) { return v \/ abs(v); }$/;"	f
+dot	3D_Geo.cpp	/^inline double dot(p3 a, p3 b) { return a.x * b.x + a.y * b.y + a.z * b.z; }$/;"	f
+dist2	3D_Geo.cpp	/^inline double dist2(p3 a, p3 b) { return dot(a - b, a - b); }$/;"	f
+dist	3D_Geo.cpp	/^inline double dist(p3 a, p3 b) { return sqrt(dot(a - b, a - b)); }$/;"	f
+cross	3D_Geo.cpp	/^inline p3 cross(p3 a, p3 b) { return p3(a.y * b.z - a.z * b.y, a.z * b.x - a.x * b.z, a.x * b.y - a.y * b.x); }$/;"	f
+orient	3D_Geo.cpp	/^double orient(p3 p, p3 q, p3 r, p3 s) { return (q - p) * (r - p) | (s - p); }$/;"	f
+orient_by_normal	3D_Geo.cpp	/^double orient_by_normal(p3 p, p3 q, p3 r, p3 n) { return (q - p) * (r - p) | n; }$/;"	f
+get_angle	3D_Geo.cpp	/^double get_angle(p3 a, p3 b) {$/;"	f
+small_angle	3D_Geo.cpp	/^double small_angle(p3 v, p3 w) {$/;"	f
+plane	3D_Geo.cpp	/^struct plane {$/;"	s	file:
+n	3D_Geo.cpp	/^    p3 n; double d; \/\/ (n | p) = d$/;"	m	struct:plane	file:
+d	3D_Geo.cpp	/^    p3 n; double d; \/\/ (n | p) = d$/;"	m	struct:plane	file:
+plane	3D_Geo.cpp	/^    plane(p3 n, double d) : n(n), d(d) {}$/;"	f	struct:plane
+plane	3D_Geo.cpp	/^    plane(p3 n, p3 p) : n(n), d(n | p) {}$/;"	f	struct:plane
+plane	3D_Geo.cpp	/^    plane(p3 p, p3 q, p3 r) : plane((q - p) * (r - p), p) {}$/;"	f	struct:plane
+side	3D_Geo.cpp	/^    double side(p3 p) { return (n | p) - d; }$/;"	f	struct:plane
+dist	3D_Geo.cpp	/^    double dist(p3 p) { return fabs(side(p)) \/ abs(n); }$/;"	f	struct:plane
+translate	3D_Geo.cpp	/^    plane translate(p3 t) { return {n, d + (n | t)}; }$/;"	f	struct:plane
+shiftUp	3D_Geo.cpp	/^    plane shiftUp(double dist) { return {n, d + dist * abs(n)}; }$/;"	f	struct:plane
+proj	3D_Geo.cpp	/^    p3 proj(p3 p) { return p - n * side(p) \/ sq(n); }$/;"	f	struct:plane
+refl	3D_Geo.cpp	/^    p3 refl(p3 p) { return p - n * 2 * side(p) \/ sq(n); }$/;"	f	struct:plane
+coords	3D_Geo.cpp	/^struct coords {$/;"	s	file:
+o	3D_Geo.cpp	/^    p3 o, dx, dy, dz;$/;"	m	struct:coords	file:
+dx	3D_Geo.cpp	/^    p3 o, dx, dy, dz;$/;"	m	struct:coords	file:
+dy	3D_Geo.cpp	/^    p3 o, dx, dy, dz;$/;"	m	struct:coords	file:
+dz	3D_Geo.cpp	/^    p3 o, dx, dy, dz;$/;"	m	struct:coords	file:
+coords	3D_Geo.cpp	/^    coords(p3 p, p3 q, p3 r) : o(p) {$/;"	f	struct:coords
+coords	3D_Geo.cpp	/^    coords(p3 p, p3 q, p3 r, p3 s) :$/;"	f	struct:coords
+pos2d	3D_Geo.cpp	/^    PT pos2d(p3 p) {$/;"	f	struct:coords
+pos3d	3D_Geo.cpp	/^    p3 pos3d(p3 p) {$/;"	f	struct:coords
+pos3d	3D_Geo.cpp	/^    p3 pos3d(PT p) { \/\/original position vector$/;"	f	struct:coords
+line3d	3D_Geo.cpp	/^struct line3d {$/;"	s	file:
+d	3D_Geo.cpp	/^    p3 d, o; \/\/ p = o + k * d$/;"	m	struct:line3d	file:
+o	3D_Geo.cpp	/^    p3 d, o; \/\/ p = o + k * d$/;"	m	struct:line3d	file:
+line3d	3D_Geo.cpp	/^    line3d(p3 p, p3 q) : d(q - p), o(p) {}$/;"	f	struct:line3d
+line3d	3D_Geo.cpp	/^    line3d(plane p1, plane p2) {$/;"	f	struct:line3d
+dist2	3D_Geo.cpp	/^    double dist2(p3 p) { return sq(d * (p - o)) \/ sq(d); }$/;"	f	struct:line3d
+dist	3D_Geo.cpp	/^    double dist(p3 p) { return sqrt(dist2(p)); }$/;"	f	struct:line3d
+cmp_proj	3D_Geo.cpp	/^    bool cmp_proj(p3 p, p3 q) { return (d | p) < (d | q); }$/;"	f	struct:line3d
+proj	3D_Geo.cpp	/^    p3 proj(p3 p) { return o + d * (d | (p - o)) \/ sq(d); }$/;"	f	struct:line3d
+refl	3D_Geo.cpp	/^    p3 refl(p3 p) { return proj(p) * 2 - p; }$/;"	f	struct:line3d
+inter	3D_Geo.cpp	/^    p3 inter(plane p) { return o - d * p.side(o) \/ (d | p.n); } \/\/ assuming plane and line are not parallel$/;"	f	struct:line3d
+dist	3D_Geo.cpp	/^double dist(line3d l1, line3d l2) {$/;"	f
+closest_on_l1	3D_Geo.cpp	/^p3 closest_on_l1(line3d l1, line3d l2) {$/;"	f
+get_angle	3D_Geo.cpp	/^double get_angle(line3d l1, line3d l2) {$/;"	f
+is_parallel	3D_Geo.cpp	/^bool is_parallel(line3d l1, line3d l2) {$/;"	f
+is_perpendicular	3D_Geo.cpp	/^bool is_perpendicular(line3d l1, line3d l2) {$/;"	f
+get_angle	3D_Geo.cpp	/^double get_angle(plane p1, plane p2) {$/;"	f
+is_parallel	3D_Geo.cpp	/^bool is_parallel(plane p1, plane p2) {$/;"	f
+is_perpendicular	3D_Geo.cpp	/^bool is_perpendicular(plane p1, plane p2) {$/;"	f
+get_angle	3D_Geo.cpp	/^double get_angle(plane p, line3d l) {$/;"	f
+is_parallel	3D_Geo.cpp	/^bool is_parallel(plane p, line3d l) {$/;"	f
+is_perpendicular	3D_Geo.cpp	/^bool is_perpendicular(plane p, line3d l) {$/;"	f
+plane_plane_intersection	3D_Geo.cpp	/^pair<p3, p3> plane_plane_intersection(p3 a1, p3 b1, p3 c1, p3 a2, p3 b2, p3 c2) {$/;"	f
+circle_center	3D_Geo.cpp	/^p3 circle_center(p3 a, p3 b, p3 c) {$/;"	f
+distance_from_segment_to_point	3D_Geo.cpp	/^double distance_from_segment_to_point(p3 a, p3 b, p3 c) {$/;"	f
+distance_from_triangle_to_point	3D_Geo.cpp	/^double distance_from_triangle_to_point(p3 a, p3 b, p3 c, p3 d) {$/;"	f
+distance_from_triangle_to_segment	3D_Geo.cpp	/^double distance_from_triangle_to_segment(p3 a, p3 b, p3 c, p3 d, p3 e) {$/;"	f
+distance_from_triangle_to_triangle	3D_Geo.cpp	/^double distance_from_triangle_to_triangle(p3 a, p3 b, p3 c, p3 d, p3 e, p3 f) {$/;"	f
+operator <	3D_Geo.cpp	/^bool operator < (p3 p, p3 q) {$/;"	f
+edge	3D_Geo.cpp	/^struct edge {$/;"	s	file:
+v	3D_Geo.cpp	/^    int v;$/;"	m	struct:edge	file:
+same	3D_Geo.cpp	/^    bool same; \/\/ is the common edge in the same order?$/;"	m	struct:edge	file:
+reorient	3D_Geo.cpp	/^vector<vector<p3>> reorient(vector<vector<p3>> fs) {$/;"	f
+CH3D	3D_Geo.cpp	/^struct CH3D {$/;"	s	file:
+face	3D_Geo.cpp	/^    struct face {$/;"	s	struct:CH3D	file:
+a	3D_Geo.cpp	/^        int a, b, c; \/\/ the number of three points on one face of the convex hull$/;"	m	struct:CH3D::face	file:
+b	3D_Geo.cpp	/^        int a, b, c; \/\/ the number of three points on one face of the convex hull$/;"	m	struct:CH3D::face	file:
+c	3D_Geo.cpp	/^        int a, b, c; \/\/ the number of three points on one face of the convex hull$/;"	m	struct:CH3D::face	file:
+ok	3D_Geo.cpp	/^        bool ok;  \/\/ whether the face belongs to the face on the final convex hull$/;"	m	struct:CH3D::face	file:
+n	3D_Geo.cpp	/^    int n; \/\/ initial vertex number$/;"	m	struct:CH3D	file:
+P	3D_Geo.cpp	/^    vector<p3> P;$/;"	m	struct:CH3D	file:
+num	3D_Geo.cpp	/^    int num; \/\/ convex hull surface triangle number$/;"	m	struct:CH3D	file:
+F	3D_Geo.cpp	/^    vector<face> F; \/\/ convex surface triangles$/;"	m	struct:CH3D	file:
+g	3D_Geo.cpp	/^    vector<vector<int>> g;$/;"	m	struct:CH3D	file:
+init	3D_Geo.cpp	/^    void init(vector<p3> p) {$/;"	f	struct:CH3D
+len	3D_Geo.cpp	/^    double len(p3 a) {$/;"	f	struct:CH3D
+cross	3D_Geo.cpp	/^    p3 cross(const p3 &a, const p3 &b, const p3 &c) {$/;"	f	struct:CH3D
+area	3D_Geo.cpp	/^    double area(p3 a, p3 b, p3 c) {$/;"	f	struct:CH3D
+volume	3D_Geo.cpp	/^    double volume(p3 a, p3 b, p3 c, p3 d) {$/;"	f	struct:CH3D
+dblcmp	3D_Geo.cpp	/^    double dblcmp(p3 &p, face &f) {$/;"	f	struct:CH3D
+deal	3D_Geo.cpp	/^    void deal(int p, int a, int b) {$/;"	f	struct:CH3D
+dfs	3D_Geo.cpp	/^    void dfs(int p, int now) {$/;"	f	struct:CH3D
+same	3D_Geo.cpp	/^    bool same(int s, int t) {$/;"	f	struct:CH3D
+create_hull	3D_Geo.cpp	/^    void create_hull() {$/;"	f	struct:CH3D
+surface_area	3D_Geo.cpp	/^    double surface_area() {$/;"	f	struct:CH3D
+volume	3D_Geo.cpp	/^    double volume() {$/;"	f	struct:CH3D
+number_of_triangles	3D_Geo.cpp	/^    int number_of_triangles() { \/\/ number of surface triangles$/;"	f	struct:CH3D
+number_of_polygons	3D_Geo.cpp	/^    int number_of_polygons() {  \/\/ number of surface polygons$/;"	f	struct:CH3D
+centroid	3D_Geo.cpp	/^    p3 centroid() { \/\/ center of gravity$/;"	f	struct:CH3D
+point_to_face_distance	3D_Geo.cpp	/^    double point_to_face_distance(p3 p, int i) {$/;"	f	struct:CH3D
+get_sphere	3D_Geo.cpp	/^p3 get_sphere(double r, double lat, double lon) {$/;"	f
+sphere_line_intersection	3D_Geo.cpp	/^int sphere_line_intersection(p3 o, double r, line3d l, pair<p3, p3> &out) {$/;"	f
+greatCircleDist	3D_Geo.cpp	/^double greatCircleDist(p3 o, double r, p3 a, p3 b) {$/;"	f
+validSegment	3D_Geo.cpp	/^bool validSegment(p3 a, p3 b) {$/;"	f
+proper_intersection	3D_Geo.cpp	/^bool proper_intersection(p3 a, p3 b, p3 c, p3 d, p3 &out) {$/;"	f
+point_on_sphere_segment	3D_Geo.cpp	/^bool point_on_sphere_segment(p3 a, p3 b, p3 p) {$/;"	f
+Set	3D_Geo.cpp	/^struct Set : vector<p3> {$/;"	s	file:
+insert	3D_Geo.cpp	/^    void insert(p3 p) {$/;"	f	struct:Set
+segment_segment_intersection_on_sphere	3D_Geo.cpp	/^Set segment_segment_intersection_on_sphere(p3 a, p3 b, p3 c, p3 d) {$/;"	f
+angle_on_sphere	3D_Geo.cpp	/^double angle_on_sphere(p3 a, p3 b, p3 c) {$/;"	f
+oriented_angle_on_sphere	3D_Geo.cpp	/^double oriented_angle_on_sphere(p3 a, p3 b, p3 c) {$/;"	f
+area_on_the_surface_of_the_sphere	3D_Geo.cpp	/^double area_on_the_surface_of_the_sphere(double r, vector<p3> p) {$/;"	f
+winding_number_3D	3D_Geo.cpp	/^int winding_number_3D(vector<vector<p3>> fs) {$/;"	f
+main	3D_Geo.cpp	/^int32_t main() {$/;"	f
+mx	E.cpp	4;"	d	file:
+ll	E.cpp	5;"	d	file:
+mod	E.cpp	6;"	d	file:
+a	E.cpp	/^int a[mx];$/;"	v
+ch	E.cpp	/^char ch[mx];$/;"	v
+n	E.cpp	/^ll n, m, ii, k;$/;"	v
+m	E.cpp	/^ll n, m, ii, k;$/;"	v
+ii	E.cpp	/^ll n, m, ii, k;$/;"	v
+k	E.cpp	/^ll n, m, ii, k;$/;"	v
+solve	E.cpp	/^void solve()$/;"	f
+main	E.cpp	/^int main()$/;"	f
+HP	Last_Part.cpp	/^struct HP{ $/;"	s	file:
+a	Last_Part.cpp	/^ PT a,b;$/;"	m	struct:HP	file:
+b	Last_Part.cpp	/^ PT a,b;$/;"	m	struct:HP	file:
+HP	Last_Part.cpp	/^ HP(){ }$/;"	f	struct:HP
+HP	Last_Part.cpp	/^ HP(PT a,PT b) :a(a) ,b(b){ }$/;"	f	struct:HP
+HP	Last_Part.cpp	/^ HP(const HP&rhs) :a(rhs.a) ,b(rhs.b){ }$/;"	f	struct:HP
+operator <	Last_Part.cpp	/^ int operator<(const HP&rhs) const{ $/;"	f	struct:HP
+line_line_intersection	Last_Part.cpp	/^ PT line_line_intersection(PT a,PT b,PT c,PT d){ $/;"	f	struct:HP
+intersection	Last_Part.cpp	/^ PT intersection(const HP&v){ $/;"	f	struct:HP
+check	Last_Part.cpp	/^int check(HP a,HP b,HP c){ $/;"	f
+half_plane_intersection	Last_Part.cpp	/^vector<PT>half_plane_intersection(vector<HP>h){ $/;"	f
+minkowski_sum	Last_Part.cpp	/^vector<PT>minkowski_sum(vector<PT>&a,vector<PT>&b){ $/;"	f
+triangle_circle_intersection	Last_Part.cpp	/^double triangle_circle_intersection(PT c,double r,PT a,PT b){ $/;"	f
+polygon_circle_intersection	Last_Part.cpp	/^double polygon_circle_intersection(vector<PT>&v,PT p,double r){ $/;"	f
+maximum_circle_cover	Last_Part.cpp	/^double maximum_circle_cover(vector<PT>p,double r,circle&c){ $/;"	f
+maximum_inscribed_circle	Last_Part.cpp	/^double maximum_inscribed_circle(vector<PT>p){ $/;"	f
+MOD	D.cpp	5;"	d	file:
+INF	D.cpp	6;"	d	file:
+nl	D.cpp	7;"	d	file:
+PI	D.cpp	8;"	d	file:
+ll	D.cpp	/^typedef long long int ll;$/;"	t	file:
+ull	D.cpp	/^typedef unsigned long long ull;$/;"	t	file:
+lld	D.cpp	/^typedef long double lld;$/;"	t	file:
+ff	D.cpp	13;"	d	file:
+ss	D.cpp	14;"	d	file:
+FOR	D.cpp	15;"	d	file:
+ROF	D.cpp	16;"	d	file:
+all	D.cpp	17;"	d	file:
+N	D.cpp	/^int const N = 1e7 + 1005;$/;"	v
+n	D.cpp	/^ll n, W, m, k;$/;"	v
+W	D.cpp	/^ll n, W, m, k;$/;"	v
+m	D.cpp	/^ll n, W, m, k;$/;"	v
+k	D.cpp	/^ll n, W, m, k;$/;"	v
+is_composite	D.cpp	/^bitset<N>is_composite;$/;"	v
+prime	D.cpp	/^vector<int>prime;$/;"	v
+seive	D.cpp	/^void seive(int n)$/;"	f
+solve	D.cpp	/^void solve()$/;"	f
+main	D.cpp	/^int main()$/;"	f
+ll	generator.cpp	3;"	d	file:
+my_rand	generator.cpp	/^ll my_rand(ll l, ll r) {$/;"	f
+main	generator.cpp	/^int main()$/;"	f
+mx	A.cpp	4;"	d	file:
+ll	A.cpp	5;"	d	file:
+mod	A.cpp	6;"	d	file:
+a	A.cpp	/^int a[mx];$/;"	v
+ch	A.cpp	/^char ch[mx];$/;"	v
+n	A.cpp	/^int n, m, ii, k;$/;"	v
+m	A.cpp	/^int n, m, ii, k;$/;"	v
+ii	A.cpp	/^int n, m, ii, k;$/;"	v
+k	A.cpp	/^int n, m, ii, k;$/;"	v
+Tree	A.cpp	/^vector<int>Tree[4 * mx];$/;"	v
+br	A.cpp	/^int br[mx];$/;"	v
+ar	A.cpp	/^pair<int, int>ar[mx];$/;"	v
+init	A.cpp	/^void init(int node, int be, int en) {$/;"	f
+query	A.cpp	/^int query(int node, int be, int en, int i, int j, int val)$/;"	f
+solve	A.cpp	/^void solve()$/;"	f
+main	A.cpp	/^int main()$/;"	f
+line	Line.cpp	/^struct line {$/;"	s	file:
+a	Line.cpp	/^    PT a, b; \/\/goes through points a and b$/;"	m	struct:line	file:
+b	Line.cpp	/^    PT a, b; \/\/goes through points a and b$/;"	m	struct:line	file:
+v	Line.cpp	/^    PT v; double c; \/\/lineForm:directionVec[cross](x,y) =c$/;"	m	struct:line	file:
+c	Line.cpp	/^    PT v; double c; \/\/lineForm:directionVec[cross](x,y) =c$/;"	m	struct:line	file:
+line	Line.cpp	/^    line() { }$/;"	f	struct:line
+line	Line.cpp	/^    line(PT v, double c) : v(v) , c(c) {$/;"	f	struct:line
+line	Line.cpp	/^    line(double _a, double _b, double _c) : v( { _b, -_a}) , c(-_c) {$/;"	f	struct:line
+line	Line.cpp	/^    line(PT p, PT q) : v(q - p) , c(cross(v, p)) , a(p) , b(q) {}$/;"	f	struct:line
+get_points	Line.cpp	/^    pair<PT, PT>get_points() {$/;"	f	struct:line
+get_abc	Line.cpp	/^    array<double, 3>get_abc() {$/;"	f	struct:line
+side	Line.cpp	/^    int side(PT p) { return sign(cross(v, p) - c);}$/;"	f	struct:line
+perpendicular_through	Line.cpp	/^    line perpendicular_through(PT p) { return{ p, p + perp(v) };}$/;"	f	struct:line
+translate	Line.cpp	/^    line translate(PT t) { return{ v, c + cross(v, t) };}$/;"	f	struct:line
+cmp_by_projection	Line.cpp	/^    bool cmp_by_projection(PT p, PT q) { return dot(v, p) < dot(v, q);}$/;"	f	struct:line
+shift_left	Line.cpp	/^    line shift_left(double d) {$/;"	f	struct:line
+point_along_line	Line.cpp	/^PT point_along_line(PT a, PT b, double d) {$/;"	f
+project_from_point_to_line	Line.cpp	/^PT project_from_point_to_line(PT a, PT b, PT c) {$/;"	f
+reflection_from_point_to_line	Line.cpp	/^PT reflection_from_point_to_line(PT a, PT b, PT c) {$/;"	f
+dist_from_point_to_line	Line.cpp	/^double dist_from_point_to_line(PT a, PT b, PT c) {$/;"	f
+is_point_on_seg	Line.cpp	/^bool is_point_on_seg(PT a, PT b, PT p) {$/;"	f
+project_from_point_to_seg	Line.cpp	/^PT project_from_point_to_seg(PT a, PT b, PT c) {$/;"	f
+dist_from_point_to_seg	Line.cpp	/^double dist_from_point_to_seg(PT a, PT b, PT c) {$/;"	f
+is_parallel	Line.cpp	/^bool is_parallel(PT a, PT b, PT c, PT d) {$/;"	f
+are_lines_same	Line.cpp	/^bool are_lines_same(PT a, PT b, PT c, PT d) {$/;"	f
+angle_bisector	Line.cpp	/^PT angle_bisector(PT&a, PT&b, PT&c) {$/;"	f
+point_line_relation	Line.cpp	/^int point_line_relation(PT a, PT b, PT p) {$/;"	f
+line_line_intersection	Line.cpp	/^bool line_line_intersection(PT a, PT b, PT c, PT d, PT&ans) {$/;"	f
+seg_seg_intersection	Line.cpp	/^bool seg_seg_intersection(PT a, PT b, PT c, PT d, PT&ans) {$/;"	f
+seg_seg_intersection_inside	Line.cpp	/^set<PT>seg_seg_intersection_inside(PT a, PT b, PT c, PT d) {$/;"	f
+seg_line_relation	Line.cpp	/^int seg_line_relation(PT a, PT b, PT c, PT d) {$/;"	f
+seg_line_intersection	Line.cpp	/^bool seg_line_intersection(PT a, PT b, PT c, PT d, PT&ans) {$/;"	f
+dist_from_seg_to_seg	Line.cpp	/^double dist_from_seg_to_seg(PT a, PT b, PT c, PT d) {$/;"	f
+dist_from_point_to_ray	Line.cpp	/^double dist_from_point_to_ray(PT a, PT b, PT c) {$/;"	f
+ray_ray_intersection	Line.cpp	/^bool ray_ray_intersection(PT as, PT ad, PT bs, PT bd) {$/;"	f
+ray_ray_distance	Line.cpp	/^double ray_ray_distance(PT as, PT ad, PT bs, PT bd) {$/;"	f
+Tf	geo.cpp	/^typedef double Tf;$/;"	t	file:
+Ti	geo.cpp	/^typedef Tf Ti;      \/\/\/ use long long for exactness$/;"	t	file:
+PI	geo.cpp	/^const Tf PI = acos(-1), EPS = 1e-9;$/;"	v
+EPS	geo.cpp	/^const Tf PI = acos(-1), EPS = 1e-9;$/;"	v
+dcmp	geo.cpp	/^int dcmp(Tf x) { return abs(x) < EPS ? 0 : (x < 0 ? -1 : 1);}$/;"	f
+Point	geo.cpp	/^struct Point {$/;"	s	file:
+x	geo.cpp	/^    Ti x, y;$/;"	m	struct:Point	file:
+y	geo.cpp	/^    Ti x, y;$/;"	m	struct:Point	file:
+Point	geo.cpp	/^    Point(Ti x = 0, Ti y = 0) : x(x), y(y) {}$/;"	f	struct:Point
+read	geo.cpp	/^    void read () { scanf("%lf%lf", &x, &y); }$/;"	f	struct:Point
+write	geo.cpp	/^    void write () { printf("%lf %lf\\n", x, y); }$/;"	f	struct:Point
+operator +	geo.cpp	/^    Point operator + (const Point& u) const { return Point(x + u.x, y + u.y); }$/;"	f	struct:Point
+operator -	geo.cpp	/^    Point operator - (const Point& u) const { return Point(x - u.x, y - u.y); }$/;"	f	struct:Point
+operator *	geo.cpp	/^    Point operator * (const long long u) const { return Point(x * u, y * u); }$/;"	f	struct:Point
+operator *	geo.cpp	/^    Point operator * (Tf u) { return Point(x * u, y * u); } \/\/\/ add const$/;"	f	struct:Point
+operator /	geo.cpp	/^    Point operator \/ (const Tf u) const { return Point(x \/ u, y \/ u); } \/\/\/ remove const$/;"	f	struct:Point
+operator ==	geo.cpp	/^    bool operator == (const Point& u) const { return dcmp(x - u.x) == 0 && dcmp(y - u.y) == 0; }$/;"	f	struct:Point
+operator !=	geo.cpp	/^    bool operator != (const Point& u) const { return !(*this == u); }$/;"	f	struct:Point
+operator <	geo.cpp	/^    bool operator < (const Point& u) const { return dcmp(x - u.x) < 0 || (dcmp(x - u.x) == 0 && dcmp(y - u.y) < 0); }$/;"	f	struct:Point
+operator >>	geo.cpp	/^    friend istream &operator >> (istream &is, Point &p) { return is >> p.x >> p.y; }$/;"	f	struct:Point
+operator <<	geo.cpp	/^    friend ostream &operator << (ostream &os, const Point &p) { return os << p.x << " " << p.y; }$/;"	f	struct:Point
+dot	geo.cpp	/^Ti dot(Point a, Point b) { return a.x * b.x + a.y * b.y; }$/;"	f
+cross	geo.cpp	/^Ti cross(Point a, Point b) { return a.x * b.y - a.y * b.x; }$/;"	f
+length	geo.cpp	/^Tf length(Point a) { return sqrt(dot(a, a)); }$/;"	f
+sqLength	geo.cpp	/^Ti sqLength(Point a) { return dot(a, a); }$/;"	f
+distance	geo.cpp	/^Tf distance(Point a, Point b) {return length(a - b);}$/;"	f
+angle	geo.cpp	/^Tf angle(Point u) { return atan2(u.y, u.x); }$/;"	f
+angleBetween	geo.cpp	/^Tf angleBetween(Point a, Point b) {$/;"	f
+rotate	geo.cpp	/^Point rotate(Point a, Tf rad) {$/;"	f
+rotatePrecise	geo.cpp	/^Point rotatePrecise(Point a, Tf co, Tf si) {$/;"	f
+rotate90	geo.cpp	/^Point rotate90(Point a) { return Point(-a.y, a.x); }$/;"	f
+scale	geo.cpp	/^Point scale(Point a, Tf s) {$/;"	f
+normal	geo.cpp	/^Point normal(Point a) {$/;"	f
+orient	geo.cpp	/^int orient(Point a, Point b, Point c) {$/;"	f
+half	geo.cpp	/^bool half(Point p) {     \/\/ returns true for point above x axis or on negative x axis$/;"	f
+polarComp	geo.cpp	/^bool polarComp(Point p, Point q) { \/\/to be used in sort() function$/;"	f
+scale	geo.cpp	/^Point scale(Point c, double factor, Point p) {$/;"	f
+isPerpendicular	geo.cpp	/^bool isPerpendicular(Point v, Point w) {return dot(v, w) == 0;}$/;"	f
+PerpenduculLength	geo.cpp	/^Tf PerpenduculLength(Point v, Point w) { Tf ret = cross(v, w) \/ length(v); return dcmp(ret) < 0 ? -ret : ret;}$/;"	f
+inAngle	geo.cpp	/^bool inAngle(Point a, Point b, Point c, Point p) {$/;"	f
+orientedAngle	geo.cpp	/^Tf orientedAngle(Point a, Point b, Point c) {$/;"	f
+Segment	geo.cpp	/^struct Segment {$/;"	s	file:
+a	geo.cpp	/^    Point a, b;$/;"	m	struct:Segment	file:
+b	geo.cpp	/^    Point a, b;$/;"	m	struct:Segment	file:
+Segment	geo.cpp	/^    Segment(Point aa, Point bb) : a(aa), b(bb) {}$/;"	f	struct:Segment
+Line	geo.cpp	/^typedef Segment Line;$/;"	t	file:
+line	geo.cpp	/^struct line {$/;"	s	file:
+a	geo.cpp	/^    Point a, b;$/;"	m	struct:line	file:
+b	geo.cpp	/^    Point a, b;$/;"	m	struct:line	file:
+v	geo.cpp	/^    Point v; Tf c;$/;"	m	struct:line	file:
+c	geo.cpp	/^    Point v; Tf c;$/;"	m	struct:line	file:
+line	geo.cpp	/^    line(Point v, Tf c) : v(v), c(c) {} \/\/ From direction vector v and offset c$/;"	f	struct:line
+line	geo.cpp	/^    line(Tf a, Tf b, Tf c) : v( {b, -a}), c(c) {} \/\/ From equation ax+by=c$/;"	f	struct:line
+line	geo.cpp	/^    line(Point p, Point q) : v(q - p), a(p), b(q), c(cross(v, p)) {} \/\/ From points P and Q$/;"	f	struct:line
+side	geo.cpp	/^    Tf side(Point p) {return cross(v, p) - c;}$/;"	f	struct:line
+dist	geo.cpp	/^    Tf dist(Point p) {return length(side(p)) \/ length(v);}$/;"	f	struct:line
+sqDist	geo.cpp	/^    Tf sqDist(Point p) {return side(p) * side(p) \/ (double)sqLength(v);}$/;"	f	struct:line
+perPointhrough	geo.cpp	/^    line perPointhrough(Point p) {return {p, p + rotate90(v)};}$/;"	f	struct:line
+cmpProj	geo.cpp	/^    bool cmpProj(Point p, Point q) {$/;"	f	struct:line
+get_abc	geo.cpp	/^    array<double, 3> get_abc() {$/;"	f	struct:line
+translate	geo.cpp	/^    line translate(Point t) {return {v, c + cross(v, t)};}$/;"	f	struct:line
+shiftLeft	geo.cpp	/^    line shiftLeft(double dist) {return {v, c + dist * length(v)};}$/;"	f	struct:line
+proj	geo.cpp	/^    Point proj(Point p) {return p - rotate90(v) * side(p) \/ sqLength(v);}$/;"	f	struct:line
+refl	geo.cpp	/^    Point refl(Point p) {return p - (rotate90(v) * 2) * side(p) \/ sqLength(v);}$/;"	f	struct:line
+Circle	geo.cpp	/^struct Circle {$/;"	s	file:
+o	geo.cpp	/^    Point o;$/;"	m	struct:Circle	file:
+r	geo.cpp	/^    Tf r;$/;"	m	struct:Circle	file:
+Circle	geo.cpp	/^    Circle(Point o = Point(0, 0), Tf r = 0) : o(o), r(r) {}$/;"	f	struct:Circle
+contains	geo.cpp	/^    bool contains(Point p) {$/;"	f	struct:Circle
+point	geo.cpp	/^    Point point(Tf rad) {$/;"	f	struct:Circle
+area	geo.cpp	/^    Tf area(Tf rad = PI + PI) { return rad * r * r \/ 2; }$/;"	f	struct:Circle
+sector	geo.cpp	/^    Tf sector(Tf alpha) { return r * r * 0.5 * (alpha - sin(alpha)); }$/;"	f	struct:Circle
+Perimeter	geo.cpp	/^    Tf Perimeter() const {$/;"	f	struct:Circle
+operator ==	geo.cpp	/^    bool operator==(const Circle& c) const {$/;"	f	struct:Circle
+circumCenter	geo.cpp	/^Point circumCenter(Point a, Point b, Point c) { \/\/\/ OK$/;"	f
+Linear	geo.cpp	/^namespace Linear {$/;"	n	file:
+onSegment	geo.cpp	/^bool onSegment(Point p, Segment s) {$/;"	f	namespace:Linear
+segmentsIntersect	geo.cpp	/^bool segmentsIntersect(Segment p, Segment q) {$/;"	f	namespace:Linear
+linesParallel	geo.cpp	/^bool linesParallel(Line p, Line q) {$/;"	f	namespace:Linear
+lineLineIntersection	geo.cpp	/^bool lineLineIntersection(Point p, Point v, Point q, Point w, Point& o) {$/;"	f	namespace:Linear
+lineLineIntersection	geo.cpp	/^bool lineLineIntersection(Line p, Line q, Point& o) {$/;"	f	namespace:Linear
+lineLineIntersectionPoint	geo.cpp	/^Point lineLineIntersectionPoint(Point a1, Point d1, Point a2, Point d2) {$/;"	f	namespace:Linear
+distancePointLine	geo.cpp	/^Tf distancePointLine(Point p, Line l) {$/;"	f	namespace:Linear
+distancePointSegment	geo.cpp	/^Tf distancePointSegment(Point p, Segment s) {$/;"	f	namespace:Linear
+distanceSegmentSegment	geo.cpp	/^Tf distanceSegmentSegment(Segment p, Segment q) {$/;"	f	namespace:Linear
+projectPointLine	geo.cpp	/^Point projectPointLine(Point p, Line l) {$/;"	f	namespace:Linear
+Polygon	geo.cpp	/^typedef vector<Point> Polygon;$/;"	t	file:
+Polygonal	geo.cpp	/^namespace Polygonal {$/;"	n	file:
+signedPolygonArea	geo.cpp	/^Tf signedPolygonArea(Polygon p) {$/;"	f	namespace:Polygonal
+convexHull	geo.cpp	/^int convexHull(Polygon p, Polygon &ch) {$/;"	f	namespace:Polygonal
+isConvex	geo.cpp	/^bool isConvex(vector<Point> p) {$/;"	f	namespace:Polygonal
+pointInPolygon	geo.cpp	/^int pointInPolygon(Point o, Polygon p) {$/;"	f	namespace:Polygonal
+longestSegInPoly	geo.cpp	/^Tf longestSegInPoly(Line l, const Polygon &p) {$/;"	f	namespace:Polygonal
+Convex	geo.cpp	/^namespace Convex {$/;"	n	file:
+rotatingCalipersGetRectangle	geo.cpp	/^void rotatingCalipersGetRectangle(Point* p, int n, Tf& area, Tf& perimeter) {$/;"	f	namespace:Convex
+cutPolygon	geo.cpp	/^Polygon cutPolygon(Polygon u, Point a, Point b) {$/;"	f	namespace:Convex
+pointInTriangle	geo.cpp	/^bool pointInTriangle(Point a, Point b, Point c, Point p) {$/;"	f	namespace:Convex
+pointInConvexPolygon	geo.cpp	/^int pointInConvexPolygon(const Polygon &pt, Point p) {$/;"	f	namespace:Convex
+extremePoint	geo.cpp	/^int extremePoint(const Polygon &poly, Point u = Point(0, 1)) {$/;"	f	namespace:Convex
+lineConvexPolyIntersection	geo.cpp	/^vector<int> lineConvexPolyIntersection(const Polygon &p, Line l) {$/;"	f	namespace:Convex
+CW	geo.cpp	/^constexpr int CW = -1, ACW = 1;$/;"	m	namespace:Convex	file:
+ACW	geo.cpp	/^constexpr int CW = -1, ACW = 1;$/;"	m	namespace:Convex	file:
+isGood	geo.cpp	/^bool isGood(Point u, Point v, Point Q, int dir) { return orient(Q, u, v) != -dir; }$/;"	f	namespace:Convex
+better	geo.cpp	/^Point better(Point u, Point v, Point Q, int dir) { return orient(Q, u, v) == dir ? u : v; }$/;"	f	namespace:Convex
+pointPolyTangent	geo.cpp	/^Point pointPolyTangent(const Polygon &pt, Point Q, int dir, int lo, int hi) {$/;"	f	namespace:Convex
+pointPolyTangents	geo.cpp	/^pair<Point, Point> pointPolyTangents(const Polygon &pt, Point Q) {$/;"	f	namespace:Convex
+Circular	geo.cpp	/^namespace Circular {$/;"	n	file:
+circleLineIntersection	geo.cpp	/^vector<Point> circleLineIntersection(Circle c, Line l) {$/;"	f	namespace:Circular
+circleTriangleIntersectionArea	geo.cpp	/^Tf circleTriangleIntersectionArea(Circle c, Segment s) {$/;"	f	namespace:Circular
+circlePolyIntersectionArea	geo.cpp	/^Tf circlePolyIntersectionArea(Circle c, Polygon p) {$/;"	f	namespace:Circular
+circleCirclePosition	geo.cpp	/^int circleCirclePosition(Circle c1, Circle c2) {$/;"	f	namespace:Circular
+circleCircleIntersection	geo.cpp	/^vector<Point> circleCircleIntersection(Circle c1, Circle c2) {$/;"	f	namespace:Circular
+circleCircleIntersectionArea	geo.cpp	/^Tf circleCircleIntersectionArea(Circle c1, Circle c2) {$/;"	f	namespace:Circular
+pointCircleTangents	geo.cpp	/^vector<Point> pointCircleTangents(Point p, Circle c) {$/;"	f	namespace:Circular
+pointCircleTangencyPoints	geo.cpp	/^vector<Point> pointCircleTangencyPoints(Point p, Circle c) {$/;"	f	namespace:Circular
+circleCircleTangencyPoints	geo.cpp	/^int circleCircleTangencyPoints(Circle c1, Circle c2, vector<Point> &a, vector<Point> &b) {$/;"	f	namespace:Circular
+EnclosingCircle	geo.cpp	/^namespace EnclosingCircle {$/;"	n	file:
+inscribedCircle	geo.cpp	/^bool inscribedCircle(Point a, Point b, Point c, Circle &p) {$/;"	f	namespace:EnclosingCircle
+apolloniusCircle	geo.cpp	/^Circle apolloniusCircle(Point P, Point Q, Tf rp, Tf rq) {$/;"	f	namespace:EnclosingCircle
+circumscribedCircle	geo.cpp	/^bool circumscribedCircle(Point a, Point b, Point c, Circle &p) {$/;"	f	namespace:EnclosingCircle
+boundary	geo.cpp	/^Circle boundary(const vector<Point> &p) {$/;"	f	namespace:EnclosingCircle
+welzl	geo.cpp	/^Circle welzl(const vector<Point> &p, int fr, vector<Point> &b) {$/;"	f	namespace:EnclosingCircle
+minidisk	geo.cpp	/^Circle minidisk(vector<Point> p) {$/;"	f	namespace:EnclosingCircle
+IntersectingSegments	geo.cpp	/^namespace IntersectingSegments {$/;"	n	file:
+yvalSegment	geo.cpp	/^Tf yvalSegment(const Line &s, Tf x) {$/;"	f	namespace:IntersectingSegments
+SegCompare	geo.cpp	/^struct SegCompare {$/;"	s	namespace:IntersectingSegments	file:
+operator ()	geo.cpp	/^    bool operator () (const Segment &p, const Segment &q) const {$/;"	f	struct:IntersectingSegments::SegCompare
+st	geo.cpp	/^multiset<Segment, SegCompare> st;$/;"	m	namespace:IntersectingSegments	file:
+iter	geo.cpp	/^typedef multiset<Segment, SegCompare>::iterator iter;$/;"	t	namespace:IntersectingSegments	file:
+prev	geo.cpp	/^iter prev(iter it) {$/;"	f	namespace:IntersectingSegments
+next	geo.cpp	/^iter next(iter it) {$/;"	f	namespace:IntersectingSegments
+Event	geo.cpp	/^struct Event {$/;"	s	namespace:IntersectingSegments	file:
+x	geo.cpp	/^    Tf x;$/;"	m	struct:IntersectingSegments::Event	file:
+tp	geo.cpp	/^    int tp, id;$/;"	m	struct:IntersectingSegments::Event	file:
+id	geo.cpp	/^    int tp, id;$/;"	m	struct:IntersectingSegments::Event	file:
+Event	geo.cpp	/^    Event(Ti x, int tp, int id) : x(x), tp(tp), id(id) { }$/;"	f	struct:IntersectingSegments::Event
+operator <	geo.cpp	/^    bool operator < (const Event &p) const {$/;"	f	struct:IntersectingSegments::Event
+anyIntersection	geo.cpp	/^bool anyIntersection(const vector<Segment> &v) {$/;"	f	namespace:IntersectingSegments
+Voronoi	geo.cpp	/^namespace Voronoi {$/;"	n	file:
+DirLine	geo.cpp	/^struct DirLine {$/;"	s	namespace:Voronoi	file:
+p	geo.cpp	/^    Point p, v;$/;"	m	struct:Voronoi::DirLine	file:
+v	geo.cpp	/^    Point p, v;$/;"	m	struct:Voronoi::DirLine	file:
+ang	geo.cpp	/^    Tf ang;$/;"	m	struct:Voronoi::DirLine	file:
+DirLine	geo.cpp	/^    DirLine() {}$/;"	f	struct:Voronoi::DirLine
+DirLine	geo.cpp	/^    DirLine(Point p, Point v) : p(p), v(v) { ang = atan2(v.y, v.x); }$/;"	f	struct:Voronoi::DirLine
+operator <	geo.cpp	/^    bool operator<(const DirLine& u) const { return ang < u.ang; }$/;"	f	struct:Voronoi::DirLine
+onLeft	geo.cpp	/^bool onLeft(DirLine l, Point p) { return dcmp(cross(l.v, p - l.p)) >= 0; }$/;"	f	namespace:Voronoi
+halfPlaneIntersection	geo.cpp	/^int halfPlaneIntersection(vector<DirLine> &li, Polygon &poly) {$/;"	f	namespace:Voronoi
+INF	geo.cpp	/^const double INF = 1e10;$/;"	m	namespace:Voronoi	file:
+voronoi	geo.cpp	/^void voronoi(const vector<Point> &site, vector<Polygon> &region, Tf bsq) {$/;"	f	namespace:Voronoi
+solve	geo.cpp	/^void solve()$/;"	f
+main	geo.cpp	/^int main()$/;"	f
+CircleUnion	3-CircleUnion+Polygon.cpp.cpp	/^struct CircleUnion { \/\/\/OK$/;"	s	file:
+n	3-CircleUnion+Polygon.cpp.cpp	/^  int n, covered[2020]; Tf x[2020], y[2020], r[2020];$/;"	m	struct:CircleUnion	file:
+covered	3-CircleUnion+Polygon.cpp.cpp	/^  int n, covered[2020]; Tf x[2020], y[2020], r[2020];$/;"	m	struct:CircleUnion	file:
+x	3-CircleUnion+Polygon.cpp.cpp	/^  int n, covered[2020]; Tf x[2020], y[2020], r[2020];$/;"	m	struct:CircleUnion	file:
+y	3-CircleUnion+Polygon.cpp.cpp	/^  int n, covered[2020]; Tf x[2020], y[2020], r[2020];$/;"	m	struct:CircleUnion	file:
+r	3-CircleUnion+Polygon.cpp.cpp	/^  int n, covered[2020]; Tf x[2020], y[2020], r[2020];$/;"	m	struct:CircleUnion	file:
+seg	3-CircleUnion+Polygon.cpp.cpp	/^  vector<pair<double, double>>seg, cover; Tf arc, pol;$/;"	m	struct:CircleUnion	file:
+cover	3-CircleUnion+Polygon.cpp.cpp	/^  vector<pair<double, double>>seg, cover; Tf arc, pol;$/;"	m	struct:CircleUnion	file:
+arc	3-CircleUnion+Polygon.cpp.cpp	/^  vector<pair<double, double>>seg, cover; Tf arc, pol;$/;"	m	struct:CircleUnion	file:
+pol	3-CircleUnion+Polygon.cpp.cpp	/^  vector<pair<double, double>>seg, cover; Tf arc, pol;$/;"	m	struct:CircleUnion	file:
+sign	3-CircleUnion+Polygon.cpp.cpp	/^  inline int sign(Tf x) {return x < -eps ? -1 : x > eps;}$/;"	f	struct:CircleUnion
+sign	3-CircleUnion+Polygon.cpp.cpp	/^  inline int sign(Tf x, Tf y) {return sign(x - y);}$/;"	f	struct:CircleUnion
+SQ	3-CircleUnion+Polygon.cpp.cpp	/^  inline Tf SQ(const Tf x) {return x * x;}$/;"	f	struct:CircleUnion
+dist	3-CircleUnion+Polygon.cpp.cpp	/^  inline Tf dist(Tf x1, Tf y1, Tf x2, Tf y2) {return sqrt(SQ(x1 - x2) + SQ(y1 - y2));}$/;"	f	struct:CircleUnion
+angle	3-CircleUnion+Polygon.cpp.cpp	/^  inline Tf angle(Tf A, Tf B, Tf C) {$/;"	f	struct:CircleUnion
+CircleUnion	3-CircleUnion+Polygon.cpp.cpp	/^  } CircleUnion() {$/;"	f	struct:CircleUnion
+init	3-CircleUnion+Polygon.cpp.cpp	/^  void init() {$/;"	f	struct:CircleUnion
+add	3-CircleUnion+Polygon.cpp.cpp	/^  } void add(Tf xx, Tf yy, Tf rr) {$/;"	f	struct:CircleUnion
+getarea	3-CircleUnion+Polygon.cpp.cpp	/^  void getarea(int i, Tf lef, Tf rig) {$/;"	f	struct:CircleUnion
+circle_solve	3-CircleUnion+Polygon.cpp.cpp	/^  Tf circle_solve() {$/;"	f	struct:CircleUnion
+CU	3-CircleUnion+Polygon.cpp.cpp	/^} CU;$/;"	v	typeref:struct:CircleUnion
+area_of_triangle	3-CircleUnion+Polygon.cpp.cpp	/^Tf area_of_triangle(PT a, PT b, PT c) {$/;"	f
+is_point_in_triangle	3-CircleUnion+Polygon.cpp.cpp	/^int is_point_in_triangle(PT a, PT b, PT c, PT p) {$/;"	f
+perimeter	3-CircleUnion+Polygon.cpp.cpp	/^Tf perimeter(vector<PT>&p) {$/;"	f
+area	3-CircleUnion+Polygon.cpp.cpp	/^Tf area(vector<PT>&p) {$/;"	f
+centroid	3-CircleUnion+Polygon.cpp.cpp	/^PT centroid(vector<PT>&p) {$/;"	f
+get_direction	3-CircleUnion+Polygon.cpp.cpp	/^bool get_direction(vector<PT>&p) {$/;"	f
+geometric_median	3-CircleUnion+Polygon.cpp.cpp	/^PT geometric_median(vector<PT>p) {$/;"	f
+convex_hull	3-CircleUnion+Polygon.cpp.cpp	/^vector<PT>convex_hull(vector<PT>&p) {$/;"	f
+is_convex	3-CircleUnion+Polygon.cpp.cpp	/^bool is_convex(vector<PT>&p) {$/;"	f
+is_point_in_convex	3-CircleUnion+Polygon.cpp.cpp	/^int is_point_in_convex(vector<PT>&p, const PT&x) { \/\/O(log n)$/;"	f
+is_point_on_polygon	3-CircleUnion+Polygon.cpp.cpp	/^bool is_point_on_polygon(vector<PT>&p, const PT&z) {$/;"	f
+winding_number	3-CircleUnion+Polygon.cpp.cpp	/^int winding_number(vector<PT>&p, const PT&z) { \/\/O(n)$/;"	f
+is_point_in_polygon	3-CircleUnion+Polygon.cpp.cpp	/^int is_point_in_polygon(vector<PT>&p, const PT&z) { \/\/O(n)$/;"	f
+extreme_vertex	3-CircleUnion+Polygon.cpp.cpp	/^int extreme_vertex(vector<PT>&p, const PT&z, const int top) { \/\/O(log n)\/\/\/not tested$/;"	f
+diameter	3-CircleUnion+Polygon.cpp.cpp	/^Tf diameter(vector<PT>&p) {$/;"	f
+width	3-CircleUnion+Polygon.cpp.cpp	/^Tf width(vector<PT>&p) {$/;"	f
+minimum_enclosing_rectangle	3-CircleUnion+Polygon.cpp.cpp	/^Tf minimum_enclosing_rectangle(vector<PT>&p) {$/;"	f
+minimum_enclosing_circle	3-CircleUnion+Polygon.cpp.cpp	/^circle minimum_enclosing_circle(vector<PT>p) { \/\/\/vector<PT>&p$/;"	f
+polygon_line_intersection	3-CircleUnion+Polygon.cpp.cpp	/^Tf polygon_line_intersection(vector<PT>p, PT a, PT b) {$/;"	f
+dist_from_point_to_polygon	3-CircleUnion+Polygon.cpp.cpp	/^Tf dist_from_point_to_polygon(vector<PT>&v, PT p) { \/\/O(log n)$/;"	f
+dist_from_polygon_to_line	3-CircleUnion+Polygon.cpp.cpp	/^Tf dist_from_polygon_to_line(vector<PT>&p, PT a, PT b,$/;"	f
+dist_from_polygon_to_polygon	3-CircleUnion+Polygon.cpp.cpp	/^Tf dist_from_polygon_to_polygon(vector<PT>&p1, vector<PT>&p2) { \/\/O(n log n)$/;"	f
+maximum_dist_from_polygon_to_polygon	3-CircleUnion+Polygon.cpp.cpp	/^Tf maximum_dist_from_polygon_to_polygon(vector<PT>&u, vector<PT>&v) { \/\/O(n)$/;"	f
+point_poly_tangent	3-CircleUnion+Polygon.cpp.cpp	/^pair<PT, int>point_poly_tangent(vector<PT>&p, PT Q, int dir, int l, int r) {$/;"	f
+tangents_from_point_to_polygon	3-CircleUnion+Polygon.cpp.cpp	/^pair<int, int>tangents_from_point_to_polygon(vector<PT>&p, PT Q) {$/;"	f
+minkowski_sum	3-CircleUnion+Polygon.cpp.cpp	/^vector<PT>minkowski_sum(vector<PT>&a, vector<PT>&b) {$/;"	f
+N	geosjs.cpp	/^const int N = 3e5 + 9;$/;"	v
+Tf	geosjs.cpp	/^typedef long double Tf;$/;"	t	file:
+inf	geosjs.cpp	/^const double inf = 1e100;$/;"	v
+eps	geosjs.cpp	/^const double eps = 1e-9;$/;"	v
+PI	geosjs.cpp	/^const double PI = acos((double) - 1.0);$/;"	v
+sign	geosjs.cpp	/^int sign(double x) { return (x > eps) - (x < -eps); }$/;"	f
+PT	geosjs.cpp	/^struct PT {$/;"	s	file:
+x	geosjs.cpp	/^    Tf x, y;$/;"	m	struct:PT	file:
+y	geosjs.cpp	/^    Tf x, y;$/;"	m	struct:PT	file:
+read	geosjs.cpp	/^    void read () { scanf("%LF%LF", &x, &y); }$/;"	f	struct:PT
+write	geosjs.cpp	/^    void write () { printf("%LF %LF\\n", x, y); }$/;"	f	struct:PT
+PT	geosjs.cpp	/^    PT() { x = 0, y = 0; }$/;"	f	struct:PT
+PT	geosjs.cpp	/^    PT(double x, double y) : x(x), y(y) {}$/;"	f	struct:PT
+PT	geosjs.cpp	/^    PT(const PT &p) : x(p.x), y(p.y)    {}$/;"	f	struct:PT
+operator +	geosjs.cpp	/^    PT operator + (const PT &a) const { return PT(x + a.x, y + a.y); }$/;"	f	struct:PT
+operator -	geosjs.cpp	/^    PT operator-(const PT &a) const { return PT(x - a.x, y - a.y); }$/;"	f	struct:PT
+operator *	geosjs.cpp	/^    PT operator * (const double a) const { return PT(x * a, y * a); }$/;"	f	struct:PT
+operator *	geosjs.cpp	/^    friend PT operator * (const double &a, const PT &b) { return PT(a * b.x, a * b.y); }$/;"	f	struct:PT
+operator /	geosjs.cpp	/^    PT operator \/ (const double a) const { return PT(x \/ a, y \/ a); }$/;"	f	struct:PT
+operator ==	geosjs.cpp	/^    bool operator == (PT a) const { return sign(a.x - x) == 0 && sign(a.y - y) == 0; }$/;"	f	struct:PT
+operator !=	geosjs.cpp	/^    bool operator != (PT a) const { return !(*this == a); }$/;"	f	struct:PT
+operator <	geosjs.cpp	/^    bool operator < (PT a) const { return sign(a.x - x) == 0 ? y < a.y : x < a.x; }$/;"	f	struct:PT
+operator >	geosjs.cpp	/^    bool operator > (PT a) const { return sign(a.x - x) == 0 ? y > a.y : x > a.x; }$/;"	f	struct:PT
+norm	geosjs.cpp	/^    double norm() { return sqrt(x * x + y * y); }$/;"	f	struct:PT
+norm2	geosjs.cpp	/^    double norm2() { return x * x + y * y; }$/;"	f	struct:PT
+perp	geosjs.cpp	/^    PT perp() { return PT(-y, x); }$/;"	f	struct:PT
+arg	geosjs.cpp	/^    double arg() { double x = atan2(y, x); return x; } \/\/\/ if (sign(x) < 0) x += 2 * PI;$/;"	f	struct:PT
+truncate	geosjs.cpp	/^    PT truncate(double r) { \/\/ returns a vector with norm r and having same direction$/;"	f	struct:PT
+operator >>	geosjs.cpp	/^    friend istream &operator >> (istream &is, PT &p) { return is >> p.x >> p.y; }$/;"	f	struct:PT
+operator <<	geosjs.cpp	/^    friend ostream &operator << (ostream &os, const PT &p) { return os << p.x << " " << p.y; }$/;"	f	struct:PT
+dot	geosjs.cpp	/^inline double dot(PT a, PT b) { return a.x * b.x + a.y * b.y; }$/;"	f
+dist2	geosjs.cpp	/^inline double dist2(PT a, PT b) { return dot(a - b, a - b); }$/;"	f
+dist	geosjs.cpp	/^inline double dist(PT a, PT b) { return sqrt(dot(a - b, a - b)); }$/;"	f
+cross	geosjs.cpp	/^inline double cross(PT a, PT b) { return a.x * b.y - a.y * b.x; }$/;"	f
+cross2	geosjs.cpp	/^inline double cross2(PT a, PT b, PT c) { return cross(b - a, c - a); }$/;"	f
+orientation	geosjs.cpp	/^inline int orientation(PT a, PT b, PT c) { return sign(cross(b - a, c - a)); }$/;"	f
+perp	geosjs.cpp	/^PT perp(PT a) { return PT(-a.y, a.x); }$/;"	f
+rotateccw90	geosjs.cpp	/^PT rotateccw90(PT a) { return PT(-a.y, a.x); }$/;"	f
+rotatecw90	geosjs.cpp	/^PT rotatecw90(PT a) { return PT(a.y, -a.x); }$/;"	f
+rotateccw	geosjs.cpp	/^PT rotateccw(PT a, double t) { return PT(a.x * cos(t) - a.y * sin(t), a.x * sin(t) + a.y * cos(t)); }$/;"	f
+rotatecw	geosjs.cpp	/^PT rotatecw(PT a, double t) { return PT(a.x * cos(t) + a.y * sin(t), -a.x * sin(t) + a.y * cos(t)); }$/;"	f
+SQ	geosjs.cpp	/^double SQ(double x) { return x * x; }$/;"	f
+rad_to_deg	geosjs.cpp	/^double rad_to_deg(double r) { return (r * 180.0 \/ PI); }$/;"	f
+deg_to_rad	geosjs.cpp	/^double deg_to_rad(double d) { return (d * PI \/ 180.0); }$/;"	f
+get_angle	geosjs.cpp	/^double get_angle(PT a, PT b) {$/;"	f
+is_point_in_angle	geosjs.cpp	/^bool is_point_in_angle(PT b, PT a, PT c, PT p) { \/\/ does point p lie in angle <bac$/;"	f
+half	geosjs.cpp	/^bool half(PT p) {$/;"	f
+polar_sort	geosjs.cpp	/^void polar_sort(vector<PT> &v) { \/\/ sort points in counterclockwise$/;"	f
+line	geosjs.cpp	/^struct line {$/;"	s	file:
+a	geosjs.cpp	/^    PT a, b; \/\/ goes through points a and b$/;"	m	struct:line	file:
+b	geosjs.cpp	/^    PT a, b; \/\/ goes through points a and b$/;"	m	struct:line	file:
+v	geosjs.cpp	/^    PT v; double c;  \/\/line form: direction vec [cross] (x, y) = c$/;"	m	struct:line	file:
+c	geosjs.cpp	/^    PT v; double c;  \/\/line form: direction vec [cross] (x, y) = c$/;"	m	struct:line	file:
+line	geosjs.cpp	/^    line() {}$/;"	f	struct:line
+line	geosjs.cpp	/^    line(PT v, double c) : v(v), c(c) {$/;"	f	struct:line
+line	geosjs.cpp	/^    line(double _a, double _b, double _c) : v( {_b, -_a}), c(-_c) {$/;"	f	struct:line
+line	geosjs.cpp	/^    line(PT p, PT q) : v(q - p), c(cross(v, p)), a(p), b(q) {}$/;"	f	struct:line
+get_points	geosjs.cpp	/^    pair<PT, PT> get_points() { \/\/extract any two points from this line$/;"	f	struct:line
+get_abc	geosjs.cpp	/^    array<double, 3> get_abc() {$/;"	f	struct:line
+side	geosjs.cpp	/^    int side(PT p) { return sign(cross(v, p) - c); }$/;"	f	struct:line
+perpendicular_through	geosjs.cpp	/^    line perpendicular_through(PT p) { return {p, p + perp(v)}; }$/;"	f	struct:line
+translate	geosjs.cpp	/^    line translate(PT t) { return {v, c + cross(v, t)}; }$/;"	f	struct:line
+cmp_by_projection	geosjs.cpp	/^    bool cmp_by_projection(PT p, PT q) { return dot(v, p) < dot(v, q); }$/;"	f	struct:line
+shift_left	geosjs.cpp	/^    line shift_left(double d) {$/;"	f	struct:line
+point_along_line	geosjs.cpp	/^PT point_along_line(PT a, PT b, double d) {$/;"	f
+project_from_point_to_line	geosjs.cpp	/^PT project_from_point_to_line(PT a, PT b, PT c) {$/;"	f
+reflection_from_point_to_line	geosjs.cpp	/^PT reflection_from_point_to_line(PT a, PT b, PT c) {$/;"	f
+dist_from_point_to_line	geosjs.cpp	/^double dist_from_point_to_line(PT a, PT b, PT c) {$/;"	f
+is_point_on_seg	geosjs.cpp	/^bool is_point_on_seg(PT a, PT b, PT p) {$/;"	f
+project_from_point_to_seg	geosjs.cpp	/^PT project_from_point_to_seg(PT a, PT b, PT c) {$/;"	f
+dist_from_point_to_seg	geosjs.cpp	/^double dist_from_point_to_seg(PT a, PT b, PT c) {$/;"	f
+is_parallel	geosjs.cpp	/^bool is_parallel(PT a, PT b, PT c, PT d) {$/;"	f
+are_lines_same	geosjs.cpp	/^bool are_lines_same(PT a, PT b, PT c, PT d) {$/;"	f
+angle_bisector	geosjs.cpp	/^PT angle_bisector(PT &a, PT &b, PT &c) {$/;"	f
+point_line_relation	geosjs.cpp	/^int point_line_relation(PT a, PT b, PT p) {$/;"	f
+line_line_intersection	geosjs.cpp	/^bool line_line_intersection(PT a, PT b, PT c, PT d, PT &ans) {$/;"	f
+seg_seg_intersection	geosjs.cpp	/^bool seg_seg_intersection(PT a, PT b, PT c, PT d, PT &ans) {$/;"	f
+seg_seg_intersection_inside	geosjs.cpp	/^set<PT> seg_seg_intersection_inside(PT a,  PT b,  PT c,  PT d) {$/;"	f
+seg_line_relation	geosjs.cpp	/^int seg_line_relation(PT a, PT b, PT c, PT d) {$/;"	f
+seg_line_intersection	geosjs.cpp	/^bool seg_line_intersection(PT a, PT b, PT c, PT d, PT &ans) {$/;"	f
+dist_from_seg_to_seg	geosjs.cpp	/^double dist_from_seg_to_seg(PT a, PT b, PT c, PT d) {$/;"	f
+dist_from_point_to_ray	geosjs.cpp	/^double dist_from_point_to_ray(PT a, PT b, PT c) {$/;"	f
+ray_ray_intersection	geosjs.cpp	/^bool ray_ray_intersection(PT as, PT ad, PT bs, PT bd) {$/;"	f
+ray_ray_distance	geosjs.cpp	/^double ray_ray_distance(PT as, PT ad, PT bs, PT bd) {$/;"	f
+circle	geosjs.cpp	/^struct circle {$/;"	s	file:
+p	geosjs.cpp	/^    PT p; double r;$/;"	m	struct:circle	file:
+r	geosjs.cpp	/^    PT p; double r;$/;"	m	struct:circle	file:
+circle	geosjs.cpp	/^    circle() {}$/;"	f	struct:circle
+circle	geosjs.cpp	/^    circle(PT _p, double _r): p(_p), r(_r) {};$/;"	f	struct:circle
+circle	geosjs.cpp	/^    circle(double x, double y, double _r): p(PT(x, y)), r(_r) {};$/;"	f	struct:circle
+circle	geosjs.cpp	/^    circle(PT a, PT b, PT c) {$/;"	f	struct:circle
+sector	geosjs.cpp	/^    Tf sector(Tf alpha) { return r * r * 0.5 * (alpha - sin(alpha)); }$/;"	f	struct:circle
+circle	geosjs.cpp	/^    circle(PT a, PT b, PT c, bool t) {$/;"	f	struct:circle
+operator ==	geosjs.cpp	/^    bool operator == (circle v) { return p == v.p && sign(r - v.r) == 0; }$/;"	f	struct:circle
+area	geosjs.cpp	/^    double area() { return PI * r * r; }$/;"	f	struct:circle
+circumference	geosjs.cpp	/^    double circumference() { return 2.0 * PI * r; }$/;"	f	struct:circle
+circle_point_relation	geosjs.cpp	/^int circle_point_relation(PT p, double r, PT b) {$/;"	f
+circle_line_relation	geosjs.cpp	/^int circle_line_relation(PT p, double r, PT a, PT b) {$/;"	f
+circle_line_intersection	geosjs.cpp	/^vector<PT> circle_line_intersection(PT c, double r, PT a, PT b) {$/;"	f
+circle_circle_relation	geosjs.cpp	/^int circle_circle_relation(PT a, double r, PT b, double R) {$/;"	f
+circle_circle_intersection	geosjs.cpp	/^vector<PT> circle_circle_intersection(PT a, double r, PT b, double R) {$/;"	f
+get_circle	geosjs.cpp	/^int get_circle(PT a, PT b, double r, circle &c1, circle &c2) {$/;"	f
+get_circle	geosjs.cpp	/^int get_circle(line u, PT q, double r1, circle &c1, circle &c2) {$/;"	f
+circle_circle_area	geosjs.cpp	/^double circle_circle_area(PT a, double r1, PT b, double r2) {$/;"	f
+tangent_lines_from_point	geosjs.cpp	/^int tangent_lines_from_point(PT p, double r, PT q, line &u, line &v) {$/;"	f
+tangents_lines_from_circle	geosjs.cpp	/^int tangents_lines_from_circle(PT c1, double r1, PT c2, double r2, bool inner, line &u, line &v) {$/;"	f
+CircleUnion	geosjs.cpp	/^struct CircleUnion { \/\/\/ OK$/;"	s	file:
+n	geosjs.cpp	/^    int n;$/;"	m	struct:CircleUnion	file:
+x	geosjs.cpp	/^    double x[2020], y[2020], r[2020];$/;"	m	struct:CircleUnion	file:
+y	geosjs.cpp	/^    double x[2020], y[2020], r[2020];$/;"	m	struct:CircleUnion	file:
+r	geosjs.cpp	/^    double x[2020], y[2020], r[2020];$/;"	m	struct:CircleUnion	file:
+covered	geosjs.cpp	/^    int covered[2020];$/;"	m	struct:CircleUnion	file:
+seg	geosjs.cpp	/^    vector<pair<double, double> > seg, cover;$/;"	m	struct:CircleUnion	file:
+cover	geosjs.cpp	/^    vector<pair<double, double> > seg, cover;$/;"	m	struct:CircleUnion	file:
+arc	geosjs.cpp	/^    double arc, pol;$/;"	m	struct:CircleUnion	file:
+pol	geosjs.cpp	/^    double arc, pol;$/;"	m	struct:CircleUnion	file:
+sign	geosjs.cpp	/^    inline int sign(double x) {return x < -eps ? -1 : x > eps;}$/;"	f	struct:CircleUnion
+sign	geosjs.cpp	/^    inline int sign(double x, double y) {return sign(x - y);}$/;"	f	struct:CircleUnion
+SQ	geosjs.cpp	/^    inline double SQ(const double x) {return x * x;}$/;"	f	struct:CircleUnion
+dist	geosjs.cpp	/^    inline double dist(double x1, double y1, double x2, double y2) {return sqrt(SQ(x1 - x2) + SQ(y1 - y2));}$/;"	f	struct:CircleUnion
+angle	geosjs.cpp	/^    inline double angle(double A, double B, double C) {$/;"	f	struct:CircleUnion
+CircleUnion	geosjs.cpp	/^    CircleUnion() {$/;"	f	struct:CircleUnion
+init	geosjs.cpp	/^    void init() {$/;"	f	struct:CircleUnion
+add	geosjs.cpp	/^    void add(double xx, double yy, double rr) {$/;"	f	struct:CircleUnion
+getarea	geosjs.cpp	/^    void getarea(int i, double lef, double rig) {$/;"	f	struct:CircleUnion
+circle_solve	geosjs.cpp	/^    double circle_solve() {$/;"	f	struct:CircleUnion
+CU	geosjs.cpp	/^} CU;$/;"	v	typeref:struct:CircleUnion
+area_of_triangle	geosjs.cpp	/^double area_of_triangle(PT a, PT b, PT c) {$/;"	f
+is_point_in_triangle	geosjs.cpp	/^int is_point_in_triangle(PT a, PT b, PT c, PT p) {$/;"	f
+perimeter	geosjs.cpp	/^double perimeter(vector<PT> &p) {$/;"	f
+area	geosjs.cpp	/^double area(vector<PT> &p) {$/;"	f
+centroid	geosjs.cpp	/^PT centroid(vector<PT> &p) {$/;"	f
+get_direction	geosjs.cpp	/^bool get_direction(vector<PT> &p) {$/;"	f
+geometric_median	geosjs.cpp	/^PT geometric_median(vector<PT> p) {$/;"	f
+convex_hull	geosjs.cpp	/^vector<PT> convex_hull(vector<PT> p) {$/;"	f
+is_convex	geosjs.cpp	/^bool is_convex(vector<PT> &p) {$/;"	f
+is_point_in_convex	geosjs.cpp	/^int is_point_in_convex(vector<PT> &p, const PT& x) { \/\/ O(log n)$/;"	f
+is_point_on_polygon	geosjs.cpp	/^bool is_point_on_polygon(vector<PT> &p, const PT& z) {$/;"	f
+winding_number	geosjs.cpp	/^int winding_number(vector<PT> &p, const PT& z) { \/\/ O(n)$/;"	f
+is_point_in_polygon	geosjs.cpp	/^int is_point_in_polygon(vector<PT> &p, const PT& z) { \/\/ O(n)$/;"	f
+extreme_vertex	geosjs.cpp	/^int extreme_vertex(vector<PT> &p, const PT &z, const int top) { \/\/ O(log n) \/\/\/ not tested$/;"	f
+diameter	geosjs.cpp	/^double diameter(vector<PT> &p) {$/;"	f
+width	geosjs.cpp	/^double width(vector<PT> &p) {$/;"	f
+minimum_enclosing_rectangle	geosjs.cpp	/^double minimum_enclosing_rectangle(vector<PT> &p) {$/;"	f
+minimum_enclosing_circle	geosjs.cpp	/^circle minimum_enclosing_circle(vector<PT> p) { \/\/\/ vector<PT> &p$/;"	f
+cut	geosjs.cpp	/^vector<PT> cut(vector<PT> &p, PT a, PT b) { \/\/\/\/ may remove from notebook$/;"	f
+polygon_line_intersection	geosjs.cpp	/^double polygon_line_intersection(vector<PT> p, PT a, PT b) {$/;"	f
+convex_line_intersection	geosjs.cpp	/^pair<PT, PT> convex_line_intersection(vector<PT> &p, PT a, PT b) {$/;"	f
+dist_from_point_to_polygon	geosjs.cpp	/^double dist_from_point_to_polygon(vector<PT> &v, PT p) { \/\/ O(log n)$/;"	f
+dist_from_polygon_to_line	geosjs.cpp	/^double dist_from_polygon_to_line(vector<PT> &p, PT a, PT b, int top) { \/\/O(log n) \/\/\/ NOT TESTED$/;"	f
+dist_from_polygon_to_polygon	geosjs.cpp	/^double dist_from_polygon_to_polygon(vector<PT> &p1, vector<PT> &p2) { \/\/ O(n log n)$/;"	f
+maximum_dist_from_polygon_to_polygon	geosjs.cpp	/^double maximum_dist_from_polygon_to_polygon(vector<PT> &u, vector<PT> &v) { \/\/O(n)$/;"	f
+point_poly_tangent	geosjs.cpp	/^pair<PT, int> point_poly_tangent(vector<PT> &p, PT Q, int dir, int l, int r) {$/;"	f
+tangents_from_point_to_polygon	geosjs.cpp	/^pair<int, int> tangents_from_point_to_polygon(vector<PT> &p, PT Q) {$/;"	f
+rat	geosjs.cpp	/^double rat(PT a, PT b, PT p) {$/;"	f
+polygon_union	geosjs.cpp	/^double polygon_union(vector<vector<PT>> &p) {$/;"	f
+HP	geosjs.cpp	/^struct HP {$/;"	s	file:
+a	geosjs.cpp	/^    PT a, b;$/;"	m	struct:HP	file:
+b	geosjs.cpp	/^    PT a, b;$/;"	m	struct:HP	file:
+HP	geosjs.cpp	/^    HP() {}$/;"	f	struct:HP
+HP	geosjs.cpp	/^    HP(PT a, PT b) : a(a), b(b) {}$/;"	f	struct:HP
+HP	geosjs.cpp	/^    HP(const HP& rhs) : a(rhs.a), b(rhs.b) {}$/;"	f	struct:HP
+operator <	geosjs.cpp	/^    int operator < (const HP& rhs) const {$/;"	f	struct:HP
+line_line_intersection	geosjs.cpp	/^    PT line_line_intersection(PT a, PT b, PT c, PT d) {$/;"	f	struct:HP
+intersection	geosjs.cpp	/^    PT intersection(const HP &v) {$/;"	f	struct:HP
+check	geosjs.cpp	/^int check(HP a, HP b, HP c) {$/;"	f
+half_plane_intersection	geosjs.cpp	/^vector<PT> half_plane_intersection(vector<HP> h) {$/;"	f
+minkowski_sum	geosjs.cpp	/^vector<PT> minkowski_sum(vector<PT> &a, vector<PT> &b) {$/;"	f
+triangle_circle_intersection	geosjs.cpp	/^double triangle_circle_intersection(PT c, double r, PT a, PT b) {$/;"	f
+polygon_circle_intersection	geosjs.cpp	/^double polygon_circle_intersection(vector<PT> &v, PT p, double r) {$/;"	f
+maximum_circle_cover	geosjs.cpp	/^double maximum_circle_cover(vector<PT> p, double r, circle &c) {$/;"	f
+maximum_inscribed_circle	geosjs.cpp	/^double maximum_inscribed_circle(vector<PT> p) {$/;"	f
+mx	geosjs.cpp	1180;"	d	file:
+ll	geosjs.cpp	1181;"	d	file:
+mod	geosjs.cpp	1182;"	d	file:
+a	geosjs.cpp	/^int a[mx];$/;"	v
+ch	geosjs.cpp	/^char ch[mx];$/;"	v
+n	geosjs.cpp	/^int n, m, ii, k;$/;"	v
+m	geosjs.cpp	/^int n, m, ii, k;$/;"	v
+ii	geosjs.cpp	/^int n, m, ii, k;$/;"	v
+k	geosjs.cpp	/^int n, m, ii, k;$/;"	v
+solve	geosjs.cpp	/^void solve()$/;"	f
+main	geosjs.cpp	/^int main()$/;"	f
+mx	H.cpp	4;"	d	file:
+ll	H.cpp	5;"	d	file:
+mod	H.cpp	6;"	d	file:
+ch	H.cpp	/^char ch[2][mx];$/;"	v
+n	H.cpp	/^int n, m, ii, k;$/;"	v
+m	H.cpp	/^int n, m, ii, k;$/;"	v
+ii	H.cpp	/^int n, m, ii, k;$/;"	v
+k	H.cpp	/^int n, m, ii, k;$/;"	v
+N	H.cpp	/^const int N = 200005;$/;"	v
+Tree	H.cpp	/^int Tree[2][N * 4][26];$/;"	v
+Lazy	H.cpp	/^int Lazy[2][N * 4][26];$/;"	v
+ar	H.cpp	/^int ar[N];$/;"	v
+Relax	H.cpp	/^void Relax(int node, int be, int en, int ti)$/;"	f
+Merge	H.cpp	/^void Merge(int node, int left, int right, int ti)$/;"	f
+init	H.cpp	/^void init(int node, int be, int en, int ti)$/;"	f
+Rupdate	H.cpp	/^void Rupdate(int node, int be, int en, int i, int j, int c, int ti)$/;"	f
+query	H.cpp	/^int query(int node, int be, int en, int i, int j, int c, int ti)$/;"	f
+solve	H.cpp	/^void solve()$/;"	f
+main	H.cpp	/^int main()$/;"	f
+inf	Basic.cpp	/^const double inf = 1e100;$/;"	v
+eps	Basic.cpp	/^const double eps = 1e-9;$/;"	v
+PI	Basic.cpp	/^const double PI = acos((double) - 1.0);$/;"	v
+sign	Basic.cpp	/^int sign(double x) { return (x > eps) - (x < -eps);}$/;"	f
+PT	Basic.cpp	/^struct PT {$/;"	s	file:
+x	Basic.cpp	/^    double x, y;$/;"	m	struct:PT	file:
+y	Basic.cpp	/^    double x, y;$/;"	m	struct:PT	file:
+read	Basic.cpp	/^    void read() { scanf("%lf%lf", &x, &y);}$/;"	f	struct:PT
+write	Basic.cpp	/^    void write() { printf("%lf %lf\\n", x, y);}$/;"	f	struct:PT
+PT	Basic.cpp	/^    PT() { x = 0, y = 0;}$/;"	f	struct:PT
+PT	Basic.cpp	/^    PT(double x, double y) : x(x) , y(y) { }$/;"	f	struct:PT
+PT	Basic.cpp	/^    PT(const PT&p) : x(p.x) , y(p.y) { }$/;"	f	struct:PT
+operator +	Basic.cpp	/^    PT operator+(const PT&a) const { return PT(x + a.x, y + a.y);}$/;"	f	struct:PT
+operator -	Basic.cpp	/^    PT operator-(const PT&a) const { return PT(x - a.x, y - a.y);}$/;"	f	struct:PT
+operator *	Basic.cpp	/^    PT operator*(const double a) const { return PT(x * a, y * a);}$/;"	f	struct:PT
+operator *	Basic.cpp	/^    friend PT operator*(const double&a, const PT&b) { return PT(a * b.x, a * b.y);}$/;"	f	struct:PT
+operator /	Basic.cpp	/^    PT operator\/(const double a) const { return PT(x \/ a, y \/ a);}$/;"	f	struct:PT
+operator ==	Basic.cpp	/^    bool operator==(PT a) const { return sign(a.x - x) == 0 && sign(a.y - y) == 0;}$/;"	f	struct:PT
+operator !=	Basic.cpp	/^    bool operator!=(PT a) const { return !(*this == a);}$/;"	f	struct:PT
+operator <	Basic.cpp	/^    bool operator<(PT a) const { return sign(a.x - x) == 0 ? y < a.y : x < a.x;}$/;"	f	struct:PT
+operator >	Basic.cpp	/^    bool operator>(PT a) const { return sign(a.x - x) == 0 ? y > a.y : x > a.x;}$/;"	f	struct:PT
+norm	Basic.cpp	/^    double norm() { return sqrt(x * x + y * y);}$/;"	f	struct:PT
+norm2	Basic.cpp	/^    double norm2() { return x * x + y * y;}$/;"	f	struct:PT
+perp	Basic.cpp	/^    PT perp() { return PT(-y, x);}$/;"	f	struct:PT
+arg	Basic.cpp	/^    double arg() { double x = atan2(y, x); return x;}$/;"	f	struct:PT
+truncate	Basic.cpp	/^    PT truncate(double r) {$/;"	f	struct:PT
+operator >>	Basic.cpp	/^    friend istream&operator>>(istream&is, PT&p) { return is >> p.x >> p.y;}$/;"	f	struct:PT
+operator <<	Basic.cpp	/^    friend ostream&operator<<(ostream&os, const PT&p) {return os << p.x << " " << p.y;}$/;"	f	struct:PT
+dot	Basic.cpp	/^inline double dot(PT a, PT b) { return a.x * b.x + a.y * b.y;}$/;"	f
+dist2	Basic.cpp	/^inline double dist2(PT a, PT b) { return dot(a - b, a - b);}$/;"	f
+dist	Basic.cpp	/^inline double dist(PT a, PT b) { return sqrt(dot(a - b, a - b));}$/;"	f
+cross	Basic.cpp	/^inline double cross(PT a, PT b) { return a.x * b.y - a.y * b.x;}$/;"	f
+cross2	Basic.cpp	/^inline double cross2(PT a, PT b, PT c) { return cross(b - a, c - a);}$/;"	f
+orientation	Basic.cpp	/^inline int orientation(PT a, PT b, PT c) { return sign(cross(b - a, c - a));}$/;"	f
+perp	Basic.cpp	/^PT perp(PT a) { return PT(-a.y, a.x);}$/;"	f
+rotateccw90	Basic.cpp	/^PT rotateccw90(PT a) { return PT(-a.y, a.x);}$/;"	f
+rotatecw90	Basic.cpp	/^PT rotatecw90(PT a) { return PT(a.y, -a.x);}$/;"	f
+rotateccw	Basic.cpp	/^PT rotateccw(PT a, double t) { return PT(a.x * cos(t) - a.y * sin(t) , a.x * sin(t) + a.y * cos(t));}$/;"	f
+rotatecw	Basic.cpp	/^PT rotatecw(PT a, double t) { return PT(a.x * cos(t) + a.y * sin(t) , -a.x * sin(t) + a.y * cos(t));}$/;"	f
+SQ	Basic.cpp	/^double SQ(double x) { return x * x;}$/;"	f
+rad_to_deg	Basic.cpp	/^double rad_to_deg(double r) { return (r * 180.0 \/ PI);}$/;"	f
+deg_to_rad	Basic.cpp	/^double deg_to_rad(double d) { return (d * PI \/ 180.0);}$/;"	f
+get_angle	Basic.cpp	/^double get_angle(PT a, PT b) {$/;"	f
+is_point_in_angle	Basic.cpp	/^bool is_point_in_angle(PT b, PT a, PT c, PT p) { \/\/<bac$/;"	f
+half	Basic.cpp	/^bool half(PT p) {$/;"	f
+polar_sort	Basic.cpp	/^void polar_sort(vector<PT>&v) {$/;"	f
+CircleUnion	3-CircleUnion+Polygon.cpp	/^struct CircleUnion{\/\/\/OK$/;"	s	file:
+n	3-CircleUnion+Polygon.cpp	/^ int n, covered[2020];Tf x[2020],y[2020],r[2020];$/;"	m	struct:CircleUnion	file:
+covered	3-CircleUnion+Polygon.cpp	/^ int n, covered[2020];Tf x[2020],y[2020],r[2020];$/;"	m	struct:CircleUnion	file:
+x	3-CircleUnion+Polygon.cpp	/^ int n, covered[2020];Tf x[2020],y[2020],r[2020];$/;"	m	struct:CircleUnion	file:
+y	3-CircleUnion+Polygon.cpp	/^ int n, covered[2020];Tf x[2020],y[2020],r[2020];$/;"	m	struct:CircleUnion	file:
+r	3-CircleUnion+Polygon.cpp	/^ int n, covered[2020];Tf x[2020],y[2020],r[2020];$/;"	m	struct:CircleUnion	file:
+seg	3-CircleUnion+Polygon.cpp	/^ vector<pair<double,double>>seg,cover;Tf arc,pol;$/;"	m	struct:CircleUnion	file:
+cover	3-CircleUnion+Polygon.cpp	/^ vector<pair<double,double>>seg,cover;Tf arc,pol;$/;"	m	struct:CircleUnion	file:
+arc	3-CircleUnion+Polygon.cpp	/^ vector<pair<double,double>>seg,cover;Tf arc,pol;$/;"	m	struct:CircleUnion	file:
+pol	3-CircleUnion+Polygon.cpp	/^ vector<pair<double,double>>seg,cover;Tf arc,pol;$/;"	m	struct:CircleUnion	file:
+sign	3-CircleUnion+Polygon.cpp	/^ inline int sign(Tf x){return x<-eps ?-1:x>eps;}$/;"	f	struct:CircleUnion
+sign	3-CircleUnion+Polygon.cpp	/^ inline int sign(Tf x,Tf y){return sign(x-y);}$/;"	f	struct:CircleUnion
+SQ	3-CircleUnion+Polygon.cpp	/^ inline Tf SQ(const Tf x){return x*x;}$/;"	f	struct:CircleUnion
+dist	3-CircleUnion+Polygon.cpp	/^ inline Tf dist(Tf x1,Tf y1,Tf x2,Tf y2){return sqrt(SQ(x1-x2)+SQ(y1-y2));}$/;"	f	struct:CircleUnion
+angle	3-CircleUnion+Polygon.cpp	/^ inline Tf angle(Tf A,Tf B,Tf C){$/;"	f	struct:CircleUnion
+CircleUnion	3-CircleUnion+Polygon.cpp	/^  return acos(val);}CircleUnion(){$/;"	f	struct:CircleUnion
+init	3-CircleUnion+Polygon.cpp	/^ void init(){n=0;seg.clear(),cover.clear();$/;"	f	struct:CircleUnion
+add	3-CircleUnion+Polygon.cpp	/^  arc=pol=0;}void add(Tf xx,Tf yy,Tf rr){$/;"	f	struct:CircleUnion
+getarea	3-CircleUnion+Polygon.cpp	/^ void getarea(int i,Tf lef,Tf rig){$/;"	f	struct:CircleUnion
+circle_solve	3-CircleUnion+Polygon.cpp	/^ Tf circle_solve(){$/;"	f	struct:CircleUnion
+CU	3-CircleUnion+Polygon.cpp	/^}CU;$/;"	v	typeref:struct:CircleUnion
+area_of_triangle	3-CircleUnion+Polygon.cpp	/^Tf area_of_triangle(PT a,PT b,PT c){$/;"	f
+is_point_in_triangle	3-CircleUnion+Polygon.cpp	/^int is_point_in_triangle(PT a,PT b,PT c,PT p){$/;"	f
+perimeter	3-CircleUnion+Polygon.cpp	/^Tf perimeter(vector<PT>&p){$/;"	f
+area	3-CircleUnion+Polygon.cpp	/^Tf area(vector<PT>&p){$/;"	f
+centroid	3-CircleUnion+Polygon.cpp	/^PT centroid(vector<PT>&p){$/;"	f
+get_direction	3-CircleUnion+Polygon.cpp	/^bool get_direction(vector<PT>&p){$/;"	f
+geometric_median	3-CircleUnion+Polygon.cpp	/^PT geometric_median(vector<PT>p){$/;"	f
+convex_hull	3-CircleUnion+Polygon.cpp	/^vector<PT>convex_hull(vector<PT>&p){$/;"	f
+is_convex	3-CircleUnion+Polygon.cpp	/^bool is_convex(vector<PT>&p){$/;"	f
+is_point_in_convex	3-CircleUnion+Polygon.cpp	/^int is_point_in_convex(vector<PT>&p,const PT&x){\/\/O(log n)$/;"	f
+is_point_on_polygon	3-CircleUnion+Polygon.cpp	/^bool is_point_on_polygon(vector<PT>&p,const PT&z){$/;"	f
+winding_number	3-CircleUnion+Polygon.cpp	/^int winding_number(vector<PT>&p,const PT&z){\/\/O(n)$/;"	f
+is_point_in_polygon	3-CircleUnion+Polygon.cpp	/^int is_point_in_polygon(vector<PT>&p,const PT&z){\/\/O(n)$/;"	f
+extreme_vertex	3-CircleUnion+Polygon.cpp	/^int extreme_vertex(vector<PT>&p,const PT&z,const int top){\/\/O(log n)\/\/\/not tested$/;"	f
+diameter	3-CircleUnion+Polygon.cpp	/^Tf diameter(vector<PT>&p){$/;"	f
+width	3-CircleUnion+Polygon.cpp	/^Tf width(vector<PT>&p){$/;"	f
+minimum_enclosing_rectangle	3-CircleUnion+Polygon.cpp	/^Tf minimum_enclosing_rectangle(vector<PT>&p){$/;"	f
+minimum_enclosing_circle	3-CircleUnion+Polygon.cpp	/^circle minimum_enclosing_circle(vector<PT>p){\/\/\/vector<PT>&p$/;"	f
+polygon_line_intersection	3-CircleUnion+Polygon.cpp	/^Tf polygon_line_intersection(vector<PT>p,PT a,PT b){$/;"	f
+dist_from_point_to_polygon	3-CircleUnion+Polygon.cpp	/^Tf dist_from_point_to_polygon(vector<PT>&v,PT p){\/\/O(log n)$/;"	f
+dist_from_polygon_to_line	3-CircleUnion+Polygon.cpp	/^Tf dist_from_polygon_to_line(vector<PT>&p,PT a,PT b,$/;"	f
+dist_from_polygon_to_polygon	3-CircleUnion+Polygon.cpp	/^Tf dist_from_polygon_to_polygon(vector<PT>&p1,vector<PT>&p2){\/\/O(n log n)$/;"	f
+maximum_dist_from_polygon_to_polygon	3-CircleUnion+Polygon.cpp	/^Tf maximum_dist_from_polygon_to_polygon(vector<PT>&u,vector<PT>&v){\/\/O(n)$/;"	f
+point_poly_tangent	3-CircleUnion+Polygon.cpp	/^pair<PT,int>point_poly_tangent(vector<PT>&p,PT Q,int dir,int l,int r){$/;"	f
+tangents_from_point_to_polygon	3-CircleUnion+Polygon.cpp	/^pair<int,int>tangents_from_point_to_polygon(vector<PT>&p,PT Q){$/;"	f
+minkowski_sum	3-CircleUnion+Polygon.cpp	/^vector<PT>minkowski_sum(vector<PT>&a,vector<PT>&b){$/;"	f
+MOD	G.cpp	5;"	d	file:
+INF	G.cpp	6;"	d	file:
+nl	G.cpp	7;"	d	file:
+PI	G.cpp	8;"	d	file:
+ll	G.cpp	/^typedef long long int ll;$/;"	t	file:
+ull	G.cpp	/^typedef unsigned long long ull;$/;"	t	file:
+lld	G.cpp	/^typedef long double lld;$/;"	t	file:
+ff	G.cpp	13;"	d	file:
+ss	G.cpp	14;"	d	file:
+all	G.cpp	15;"	d	file:
+mt	G.cpp	17;"	d	file:
+eb	G.cpp	18;"	d	file:
+pb	G.cpp	19;"	d	file:
+mx	G.cpp	/^int const mx = 1e7 + 5;$/;"	v
+n	G.cpp	/^ll n, W, m, k;$/;"	v
+W	G.cpp	/^ll n, W, m, k;$/;"	v
+m	G.cpp	/^ll n, W, m, k;$/;"	v
+k	G.cpp	/^ll n, W, m, k;$/;"	v
+is_composite	G.cpp	/^bitset<mx>is_composite;$/;"	v
+prime	G.cpp	/^vector<int>prime;$/;"	v
+phi	G.cpp	/^int phi[mx];$/;"	v
+prefix	G.cpp	/^ll prefix[mx];$/;"	v
+seive	G.cpp	/^void seive()$/;"	f
+solve	G.cpp	/^void solve()$/;"	f
+main	G.cpp	/^int main()$/;"	f
+MOD	algo.cpp	5;"	d	file:
+INF	algo.cpp	6;"	d	file:
+nl	algo.cpp	7;"	d	file:
+PI	algo.cpp	8;"	d	file:
+ll	algo.cpp	/^typedef long long int ll;$/;"	t	file:
+ull	algo.cpp	/^typedef unsigned long long ull;$/;"	t	file:
+lld	algo.cpp	/^typedef long double lld;$/;"	t	file:
+N	algo.cpp	/^int const N = 2e5 + 5;$/;"	v
+a	algo.cpp	/^int a[N], LOG[N], par[N][20];$/;"	v
+LOG	algo.cpp	/^int a[N], LOG[N], par[N][20];$/;"	v
+par	algo.cpp	/^int a[N], LOG[N], par[N][20];$/;"	v
+RMQ	algo.cpp	/^struct RMQ { \/\/\/ 0 base index$/;"	s	file:
+rmq	algo.cpp	/^	vector<vector<T>>rmq;$/;"	m	struct:RMQ	file:
+kInf	algo.cpp	/^	T kInf = numeric_limits<T>::max();$/;"	m	struct:RMQ	file:
+build	algo.cpp	/^	void build(const vector<T>&v) {$/;"	f	struct:RMQ
+query	algo.cpp	/^	T query(int a, int b) {$/;"	f	struct:RMQ
+LCA	algo.cpp	/^struct LCA { \/\/0 base$/;"	s	file:
+st	algo.cpp	/^	vector<int>st, en, d;$/;"	m	struct:LCA	file:
+en	algo.cpp	/^	vector<int>st, en, d;$/;"	m	struct:LCA	file:
+d	algo.cpp	/^	vector<int>st, en, d;$/;"	m	struct:LCA	file:
+g	algo.cpp	/^	vector<vector<int>>g;$/;"	m	struct:LCA	file:
+linear	algo.cpp	/^	vector<pair<int, int>>linear;$/;"	m	struct:LCA	file:
+rmq	algo.cpp	/^	RMQ<pair<int, int>>rmq;$/;"	m	struct:LCA	file:
+timer	algo.cpp	/^	int timer = 0;$/;"	m	struct:LCA	file:
+LCA	algo.cpp	/^	LCA() {}$/;"	f	struct:LCA
+LCA	algo.cpp	/^	LCA(int n): st(n, -1), en(n, -1), d(n), g(n), linear(2 * n - 1) {}$/;"	f	struct:LCA
+dfs	algo.cpp	/^	void dfs(int u, int p, int l) {$/;"	f	struct:LCA
+addedge	algo.cpp	/^	void addedge(int u, int v) {$/;"	f	struct:LCA
+build	algo.cpp	/^	void build(int root) {$/;"	f	struct:LCA
+query	algo.cpp	/^	int query(int a, int b) {$/;"	f	struct:LCA
+dist	algo.cpp	/^	int dist(int a, int b) {$/;"	f	struct:LCA
+solve	algo.cpp	/^void solve()$/;"	f
+main	algo.cpp	/^int main()$/;"	f
